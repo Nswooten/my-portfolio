@@ -1,12 +1,29 @@
-//css
-import styles from '../MyExperience/MyExperience.module.css'
+import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react"
+import useOnScreen from "../../hooks/useOnScreen";
 
 
-const MyExperience = () => {
-  return (  
-    <div className={styles.myexperiencecontainer}>
-      i good at code
-    </div>
+const MyExperience = (props) => {
+  const {pageRefs, intersectionRef, isVisible, } = props
+  console.log(isVisible, "MyExperience"); 
+  return (
+    <Flex
+    alignItems={"center"}
+    height={"100vh"}
+    >
+      <Stack
+      ref={intersectionRef}
+      flexBasis={{base:0, md: 0}}
+      >
+        <Box>
+          <Text>
+            deez my ol jobs
+          </Text>
+          <Heading>
+            BE IMPRESSED 
+          </Heading>
+        </Box>
+      </Stack>
+    </Flex>
   )
 }
  

@@ -1,12 +1,29 @@
-//css
-import styles from '../Projects/Projects.module.css'
+import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react"
 
 
-const Projects = () => {
+
+const Projects = (props) => {
+  const {pageRefs, intersectionRef, isVisible, } = props
+  console.log(isVisible, "Projects");
   return (  
-    <div className={styles.projectscontainer}>
-      take a look at my project, shes the only one i got, (nuh nuh nuh nuh)
-    </div>
+    <Flex
+    alignItems={"center"}
+    height={"100vh"}
+    >
+      <Stack
+      ref={intersectionRef}
+      flexBasis={{base:0, md: 0}}
+      >
+        <Box>
+          <Text>
+            MY projs
+          </Text>
+          <Heading>
+            LOOK AT THEM
+          </Heading>
+        </Box>
+      </Stack>
+    </Flex>
   )
 }
  
