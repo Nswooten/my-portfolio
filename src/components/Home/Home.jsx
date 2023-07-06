@@ -11,6 +11,8 @@ const Home = (props) => {
     height={"100vh"}
     >
       <Stack
+      id={"Home"}
+      pageRefs={pageRefs}
       ref={intersectionRef}
       flexBasis={{base:0, md: 0}}
       >

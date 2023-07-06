@@ -1,9 +1,9 @@
 import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react"
-import useOnScreen from "../../hooks/useOnScreen";
+// import useOnScreen from "../../hooks/useOnScreen";
 
 
 const MyExperience = (props) => {
-  const {pageRefs, intersectionRef, isVisible, } = props
+  const {intersectionRef, isVisible, } = props
   console.log(isVisible, "MyExperience"); 
   return (
     <Flex
@@ -11,6 +11,7 @@ const MyExperience = (props) => {
     height={"100vh"}
     >
       <Stack
+      id={"MyExperience"}
       ref={intersectionRef}
       flexBasis={{base:0, md: 0}}
       >

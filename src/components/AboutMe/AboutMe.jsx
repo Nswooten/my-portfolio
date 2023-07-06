@@ -3,7 +3,7 @@ import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react"
 
 
 const AboutMe = (props) => {
-  const {pageRefs, intersectionRef, isVisible, } = props
+  const {intersectionRef, isVisible, } = props
   console.log(isVisible, "AboutMe"); 
   return (  
     <Flex
@@ -11,6 +11,7 @@ const AboutMe = (props) => {
     height={"100vh"}
     >
       <Stack
+      id="AboutMe"
       ref={intersectionRef}
       flexBasis={{base:0, md: 0}}
       >

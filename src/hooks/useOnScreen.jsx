@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from 'react'
 const useOnScreen = () => {
   const [isVisible, setIsVisible] = useState(false)
   const intersectionRef = useRef()
+  // console.dir(IntersectionObserver);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
