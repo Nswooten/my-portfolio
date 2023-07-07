@@ -2,16 +2,32 @@ import {Text} from '@chakra-ui/react'
 
 
 const NavButton = (props) => {
-  const {label, scroll } = props
+  const {label, scroll, setMenuOpen, menuOpen } = props
   
   
-  return (  
+  
+  return (
+    <>
+    {!setMenuOpen && 
     <Text
     cursor={'pointer'}
     onClick={() => scroll(label)}
     >
       {label}
     </Text>
+    }
+    {setMenuOpen && 
+    <Text
+    cursor={'pointer'}
+    onClick={() => {
+      setMenuOpen(!menuOpen)
+      scroll(label) 
+    }}
+    >
+      {label}
+    </Text>
+    }
+    </>
 
 
   )

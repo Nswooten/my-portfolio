@@ -16,7 +16,6 @@ import Nav from './components/Nav/Nav'
 
 
 function App() {
-  const pageRefs = useRef({})
   const [y, scrollDir] = useNavigation()
   const [intersectionRef1, isVisible1] = useOnScreen()
   const [intersectionRef2, isVisible2] = useOnScreen()
@@ -25,34 +24,28 @@ function App() {
   const [intersectionRef5, isVisible5] = useOnScreen()
 
   return (
-    <VStack spacing={0}>
+    <VStack spacing={0} >
       <Nav 
-        pageRefs={pageRefs}
         scrollDir={scrollDir}
         y={y}
       />
       <Home 
-        pageRefs={pageRefs}
         intersectionRef={intersectionRef1}
         isVisible={isVisible1}
       />
       <AboutMe 
-        pageRefs={pageRefs}
         intersectionRef={intersectionRef2}
         isVisible={isVisible2}
       />
       <MyExperience 
-        pageRefs={pageRefs}
         intersectionRef={intersectionRef3}
         isVisible={isVisible3}
       />
       <Projects 
-        pageRefs={pageRefs}
         intersectionRef={intersectionRef4}
         isVisible={isVisible4}
       />
       <Contact 
-        pageRefs={pageRefs}
         intersectionRef={intersectionRef5}
         isVisible={isVisible5}
       />

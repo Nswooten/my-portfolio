@@ -11,7 +11,7 @@ const AboutMe = (props) => {
     height={"100vh"}
     >
       <Stack
-      id="AboutMe"
+      id="About Me"
       ref={intersectionRef}
       flexBasis={{base:0, md: 0}}
       >
