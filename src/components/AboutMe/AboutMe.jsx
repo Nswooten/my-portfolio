@@ -8,25 +8,26 @@ const AboutMe = (props) => {
   return (  
     <Flex
     alignItems={"center"}
+    justifyContent={"center"}
     height={"100vh"}
+    id="About Me"
     >
       <Stack
-      id="About Me"
       ref={intersectionRef}
       flexBasis={{base:0, md: 0}}
       >
         <Box>
           <Text>
-            stuff bout me
+            This Info bout me
           </Text>
           <Heading>
-            Wanna Be frens?
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus tempora cupiditate porro, reiciendis a temporibus ratione consectetur doloremque incidunt laudantium. Officiis quia quaerat consequuntur optio totam. Libero iste voluptate sequi.     
           </Heading>
         </Box>
       </Stack>
     </Flex>
   )
 }
- 
+
 export default AboutMe
 

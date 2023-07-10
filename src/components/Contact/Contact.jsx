@@ -8,10 +8,11 @@ const Contact = (props) => {
   return (  
     <Flex
     alignItems={"center"}
+    justifyContent={"center"}
     height={"100vh"}
+    id="Contact"
     >
       <Stack
-      id="Contact"
       ref={intersectionRef}
       flexBasis={{base:0, md: 0}}
       >
@@ -20,12 +21,12 @@ const Contact = (props) => {
             Hire MEEEE
           </Text>
           <Heading>
-           PLEASE
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis dolorem tempora hic, eveniet quas neque dolore. Eveniet earum accusantium, hic consequatur officiis ad ducimus debitis, ea amet similique officia.
           </Heading>
         </Box>
       </Stack>
     </Flex>
   )
 }
- 
+
 export default Contact

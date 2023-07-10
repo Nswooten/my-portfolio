@@ -4,6 +4,10 @@
   padding: 2rem;
   text-align: center;
   color: white;
+  
+}
+html * {
+  /* border: 1px solid red; */
 }
 
 .logo {

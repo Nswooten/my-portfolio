@@ -9,9 +9,10 @@ const MyExperience = (props) => {
     <Flex
     alignItems={"center"}
     height={"100vh"}
+    id={"My Experience"}
+    justifyContent={"center"}
     >
       <Stack
-      id={"My Experience"}
       ref={intersectionRef}
       flexBasis={{base:0, md: 0}}
       >

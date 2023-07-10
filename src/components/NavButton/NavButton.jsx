@@ -21,7 +21,8 @@ const NavButton = (props) => {
     cursor={'pointer'}
     onClick={() => {
       setMenuOpen(!menuOpen)
-      scroll(label) 
+      scroll(label)
+      
     }}
     >
       {label}

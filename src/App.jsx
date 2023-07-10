@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import  useOnScreen from "./hooks/useOnScreen"
 import  useNavigation from "./hooks/useNavigation"
 import './App.css'
-import { VStack } from '@chakra-ui/react'
+import { VStack, useColorModeValue} from '@chakra-ui/react'
 
 
 
@@ -24,7 +24,10 @@ function App() {
   const [intersectionRef5, isVisible5] = useOnScreen()
 
   return (
-    <VStack spacing={0} >
+    <VStack 
+    spacing={0} 
+    color={useColorModeValue("white", "black")}
+    >
       <Nav 
         scrollDir={scrollDir}
         y={y}
@@ -36,6 +39,7 @@ function App() {
       <AboutMe 
         intersectionRef={intersectionRef2}
         isVisible={isVisible2}
+        y={y}
       />
       <MyExperience 
         intersectionRef={intersectionRef3}
