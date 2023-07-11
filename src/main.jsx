@@ -4,6 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import { aggieTheme } from './components/theme.jsx'
+import Particle from './Particle/Particle.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

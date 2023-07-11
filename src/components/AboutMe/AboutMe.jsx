@@ -11,6 +11,7 @@ const AboutMe = (props) => {
     justifyContent={"center"}
     height={"100vh"}
     id="About Me"
+    zIndex={1}
     >
       <Stack
       ref={intersectionRef}

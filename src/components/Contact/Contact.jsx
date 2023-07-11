@@ -11,6 +11,7 @@ const Contact = (props) => {
     justifyContent={"center"}
     height={"100vh"}
     id="Contact"
+    zIndex={1}
     >
       <Stack
       ref={intersectionRef}

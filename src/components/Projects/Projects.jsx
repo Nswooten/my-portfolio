@@ -11,6 +11,8 @@ const Projects = (props) => {
     height={"100vh"}
     id="Projects"
     justifyContent={"center"}
+    zIndex={1}
+
     >
       <Stack
       ref={intersectionRef}

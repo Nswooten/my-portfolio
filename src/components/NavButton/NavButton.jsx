@@ -10,6 +10,7 @@ const NavButton = (props) => {
     <>
     {!setMenuOpen && 
     <Text
+    fontSize={18}
     cursor={'pointer'}
     onClick={() => scroll(label)}
     >

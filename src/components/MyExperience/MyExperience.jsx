@@ -11,6 +11,8 @@ const MyExperience = (props) => {
     height={"100vh"}
     id={"My Experience"}
     justifyContent={"center"}
+    zIndex={1}
+
     >
       <Stack
       ref={intersectionRef}

@@ -44,7 +44,7 @@ const Nav = (props) => {
         backgroundColor={
           menuOpen
           ? "transparent"
-          : useColorModeValue("black","white")
+          : useColorModeValue("rgba(14,17,17,.8)","rgba(245,245,245,.8)")
         }
         boxShadow={
           menuOpen 
@@ -52,7 +52,7 @@ const Nav = (props) => {
           : y !== 0 && scrollDir === "up" 
         ? "dark-lg" 
         : "none" }
-        height={y !== 0 && scrollDir === "up" ? 65 : 100}
+        height={y !== 0 && scrollDir === "up" ? 75 : 100}
         zIndex={3}
 
       >
