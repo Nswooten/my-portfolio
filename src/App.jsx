@@ -1,8 +1,8 @@
 import { useRef } from 'react'
-import  useOnScreen from "./hooks/useOnScreen"
-import  useNavigation from "./hooks/useNavigation"
+import useOnScreen from "./hooks/useOnScreen"
+import useNavigation from "./hooks/useNavigation"
 import './App.css'
-import { VStack, useColorModeValue} from '@chakra-ui/react'
+import { VStack, useColorModeValue } from '@chakra-ui/react'
 
 
 //components
@@ -13,10 +13,11 @@ import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 import Nav from './components/Nav/Nav'
 import Particle from './Particle/Particle'
+import Social from './components/Social/Social'
 
 
 function App() {
-  
+
   const [y, scrollDir] = useNavigation()
   const [intersectionRef1, isVisible1] = useOnScreen()
   const [intersectionRef2, isVisible2] = useOnScreen()
@@ -26,38 +27,39 @@ function App() {
 
   return (
     <>
-    <VStack 
-    spacing={0} 
-    color={useColorModeValue("white", "black")}
-    >
-      <Nav 
-        scrollDir={scrollDir}
-        y={y}
+      <VStack
+        spacing={0}
+        color={useColorModeValue("white", "black")}
+      >
+        <Nav
+          scrollDir={scrollDir}
+          y={y}
         />
-      <Home 
-        intersectionRef={intersectionRef1}
-        isVisible={isVisible1}
+        <Social />
+        <Home
+          intersectionRef={intersectionRef1}
+          isVisible={isVisible1}
         >
-      </Home>
-      <AboutMe 
-        intersectionRef={intersectionRef2}
-        isVisible={isVisible2}
-        y={y}
-      />
-      <MyExperience 
-        intersectionRef={intersectionRef3}
-        isVisible={isVisible3}
-      />
-      <Projects 
-        intersectionRef={intersectionRef4}
-        isVisible={isVisible4}
-      />
-      <Contact 
-        intersectionRef={intersectionRef5}
-        isVisible={isVisible5}
-      />
-      
-    </VStack>
+        </Home>
+        <AboutMe
+          intersectionRef={intersectionRef2}
+          isVisible={isVisible2}
+          y={y}
+        />
+        <MyExperience
+          intersectionRef={intersectionRef3}
+          isVisible={isVisible3}
+        />
+        <Projects
+          intersectionRef={intersectionRef4}
+          isVisible={isVisible4}
+        />
+        <Contact
+          intersectionRef={intersectionRef5}
+          isVisible={isVisible5}
+        />
+
+      </VStack>
     </>
   )
 }

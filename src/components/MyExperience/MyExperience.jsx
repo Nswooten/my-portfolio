@@ -3,32 +3,32 @@ import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react"
 
 
 const MyExperience = (props) => {
-  const {intersectionRef, isVisible, } = props
-  console.log(isVisible, "MyExperience"); 
+  const { intersectionRef, isVisible, } = props
+  console.log(isVisible, "MyExperience");
   return (
     <Flex
-    alignItems={"center"}
-    height={"100vh"}
-    id={"My Experience"}
-    justifyContent={"center"}
-    zIndex={1}
+      alignItems={"center"}
+      height={"100vh"}
+      id={"My Experience"}
+      justifyContent={"center"}
+      zIndex={1}
 
     >
       <Stack
-      ref={intersectionRef}
-      flexBasis={{base:0, md: 0}}
+        ref={intersectionRef}
+        flexBasis={{ base: 0, md: 0 }}
       >
         <Box>
           <Text>
             deez my ol jobs
           </Text>
           <Heading>
-            BE IMPRESSED 
+            BE IMPRESSED
           </Heading>
         </Box>
       </Stack>
     </Flex>
   )
 }
- 
+
 export default MyExperience

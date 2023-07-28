@@ -9,7 +9,7 @@ import Particle from './Particle/Particle.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ChakraProvider resetCSS theme={aggieTheme} >
-      <App/>
+      <App />
     </ChakraProvider>
   </React.StrictMode>,
 )

@@ -8,10 +8,10 @@ const useOnScreen = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => setIsVisible(entry.isIntersecting), {
-        root: null,
-        rootMargin: "0px",
-        threshold: .25
-    })  
+      root: null,
+      rootMargin: "0px",
+      threshold: .25
+    })
     if (intersectionRef.current) {
       observer.observe(intersectionRef.current)
     }

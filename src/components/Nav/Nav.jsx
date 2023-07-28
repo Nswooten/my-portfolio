@@ -11,21 +11,21 @@ import { Squash as Hamburger } from 'hamburger-react'
 
 
 const Nav = (props) => {
-  const {scrollDir, y} = props
+  const { scrollDir, y } = props
   const [isLargeScreen] = useMediaQuery("(min-width: 1050px)")
   const [menuOpen, setMenuOpen] = useState(false)
-  const [ stopScroll, setStopScroll] = useState("initial")
-  const {colorMode, toggleColorMode} = useColorMode()
+  const [stopScroll, setStopScroll] = useState("initial")
+  const { colorMode, toggleColorMode } = useColorMode()
   console.log(isLargeScreen);
   console.log(scrollDir, y)
   const scrollIntoView = (label) => {
     const section = document.getElementById(label)
     if (section) {
-      section.scrollIntoView({behavior: 'smooth' })
-    } 
+      section.scrollIntoView({ behavior: 'smooth' })
+    }
   }
   const ColorModeToggleIcon = colorMode === "dark" ? FaMoon : FaSun
-  
+
   useEffect(() => {
     setStopScroll(
       document.body.style.overflow = menuOpen
@@ -35,7 +35,7 @@ const Nav = (props) => {
   }, [menuOpen])
   return (
     <>
-      <HStack 
+      <HStack
         position={"fixed"}
         justify={"space-between"}
         top={y > 80 && scrollDir === "down" ? -110 : 0}
@@ -43,89 +43,89 @@ const Nav = (props) => {
         width={"100%"}
         backgroundColor={
           menuOpen
-          ? "transparent"
-          : useColorModeValue("rgba(14,17,17,.8)","rgba(245,245,245,.8)")
+            ? "transparent"
+            : useColorModeValue("rgba(14,17,17,.8)", "rgba(245,245,245,.8)")
         }
         boxShadow={
-          menuOpen 
-          ? "none"
-          : y !== 0 && scrollDir === "up" 
-        ? "dark-lg" 
-        : "none" }
-        height={y !== 0 && scrollDir === "up" ? 75 : 100}
+          menuOpen
+            ? "none"
+            : y !== 0 && scrollDir === "up"
+              ? "dark-lg"
+              : "none"}
+        height={y !== 0 && scrollDir === "up" ? "7%" : "9%"}
         zIndex={3}
 
       >
         <IconButton
           marginLeft={"10"}
-          icon={<ColorModeToggleIcon/>}
+          icon={<ColorModeToggleIcon />}
           onClick={toggleColorMode}
-          color={useColorModeValue("black", "white" )}
-          bgColor={useColorModeValue("white", "black" )}
+          color={useColorModeValue("black", "white")}
+          bgColor={useColorModeValue("white", "black")}
           _hover={{
-            color:useColorModeValue("white", "black" ),
-            bgColor:useColorModeValue("black", "white" ),
-            border:"1px solid darkGrey"
+            color: useColorModeValue("white", "black"),
+            bgColor: useColorModeValue("black", "white"),
+            border: "1px solid darkGrey"
           }}
         />
         {isLargeScreen ? (
           <>
-        <NavButton label="Home" scroll={scrollIntoView}/>
-        <NavButton label="About Me" scroll={scrollIntoView}/>
-        <NavButton label="My Experience" scroll={scrollIntoView}/>
-        <NavButton label="Projects" scroll={scrollIntoView}/>
-        <NavButton label="Contact" scroll={scrollIntoView}/>
-        <ResumeButton isLargeScreen={isLargeScreen} />
-        </>
-        ) 
-        : (
-          // <IconButton
-          // id='hamburgerMenu'
-          // icon={<Hamburger toggled={menuOpen}/>}
-          // onClick={() => setMenuOpen(!menuOpen)}
-          // />
-          <Box
-          style={{ marginRight: "40px" }}
-          >
-            <Hamburger
-            toggled={menuOpen}
-            onToggle={() => setMenuOpen(!menuOpen)}
-            size={40}
-            />
-          </Box>
-      
+            <NavButton label="Home" scroll={scrollIntoView} />
+            <NavButton label="About Me" scroll={scrollIntoView} />
+            <NavButton label="My Experience" scroll={scrollIntoView} />
+            <NavButton label="Projects" scroll={scrollIntoView} />
+            <NavButton label="Contact" scroll={scrollIntoView} />
+            <ResumeButton isLargeScreen={isLargeScreen} />
+          </>
         )
+          : (
+            // <IconButton
+            // id='hamburgerMenu'
+            // icon={<Hamburger toggled={menuOpen}/>}
+            // onClick={() => setMenuOpen(!menuOpen)}
+            // />
+            <Box
+              style={{ marginRight: "40px" }}
+            >
+              <Hamburger
+                toggled={menuOpen}
+                onToggle={() => setMenuOpen(!menuOpen)}
+                size={40}
+              />
+            </Box>
+
+          )
         }
       </HStack>
-  
-    {!isLargeScreen && (
-      <>  
-      <VStack
-      boxShadow={"dark-lg"}
-      fontSize={16}
-      height={"100%"}
-      justifyContent={"center"}
-      position={"fixed"}
-      right={menuOpen ? 0 : "-50%"}
-      spacing={10}
-      transition={"500ms ease-in-out"}
-      width={"50%"}
-      zIndex={2}
-      top={0}
-      visibility={menuOpen ? "visible" : "hidden"}
-      backgroundColor={
-        useColorModeValue("rgba(14,17,17,.9)","rgba(245,245,245,.9)")
-      }
-      >
-      <NavButton label="Home" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
-      <NavButton label="About Me" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
-      <NavButton label="My Experience" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
-      <NavButton label="Projects" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
-      <NavButton label="Contact" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
-      <ResumeButton />
-      </VStack>
-      </>
-  )}
+
+      {!isLargeScreen && (
+        <>
+          <VStack
+            boxShadow={"dark-lg"}
+            fontSize={16}
+            height={"100%"}
+            justifyContent={"center"}
+            position={"fixed"}
+            right={menuOpen ? 0 : "-50%"}
+            spacing={10}
+            transition={"300ms ease-in-out"}
+            width={"50%"}
+            zIndex={2}
+            top={0}
+            visibility={menuOpen ? "visible" : "hidden"}
+            backgroundColor={
+              useColorModeValue("rgba(14,17,17,.9)", "rgba(245,245,245,.9)")
+            }
+          >
+            <NavButton label="Home" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+            <NavButton label="About Me" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+            <NavButton label="My Experience" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+            <NavButton label="Projects" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+            <NavButton label="Contact" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+            <ResumeButton />
+          </VStack>
+        </>
+      )}
     </>
   )
 }

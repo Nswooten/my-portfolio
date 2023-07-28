@@ -20,7 +20,7 @@ const useNavigation = () => {
   useEffect(() => {
     setY(window.scrollY)
     window.addEventListener("scroll", handleNavigation)
-    return () =>{
+    return () => {
       window.removeEventListener("scroll", handleNavigation)
     }
   }, [handleNavigation])

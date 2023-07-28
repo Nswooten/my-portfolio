@@ -3,20 +3,20 @@ import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react"
 
 
 const Projects = (props) => {
-  const {intersectionRef, isVisible, } = props
+  const { intersectionRef, isVisible, } = props
   console.log(isVisible, "Projects");
-  return (  
+  return (
     <Flex
-    alignItems={"center"}
-    height={"100vh"}
-    id="Projects"
-    justifyContent={"center"}
-    zIndex={1}
+      alignItems={"center"}
+      height={"100vh"}
+      id="Projects"
+      justifyContent={"center"}
+      zIndex={1}
 
     >
       <Stack
-      ref={intersectionRef}
-      flexBasis={{base:0, md: 0}}
+        ref={intersectionRef}
+        flexBasis={{ base: 0, md: 0 }}
       >
         <Box>
           <Text>
