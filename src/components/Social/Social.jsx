@@ -1,10 +1,10 @@
 import { Box, Flex, Heading, Stack, Text, Divider, useColorModeValue } from "@chakra-ui/react"
 import { FiCodepen, FiGithub, FiLinkedin, FiFacebook, FiMail } from "react-icons/fi"
+import { useMediaQuery } from "@chakra-ui/react"
 
 
-const Social = (props) => {
-  const { intersectionRef, isVisible, } = props
-  console.log(isVisible, "AboutMe");
+const Social = () => {
+  const [isLargeScreen] = useMediaQuery("(min-width: 1050px)")
   return (
     <>
     <Stack
@@ -13,36 +13,31 @@ const Social = (props) => {
     alignItems={"center"}
     justify="center" 
     position={"fixed"}
-    right={{ base: 5, sm: 5, lg:15 }}
+    right={{ base: 1, sm: 20, lg:150 }}
     width={"11vw"}
     height={"60vh"}
-    marginTop={"79"}
+    marginTop={isLargeScreen ? "10%" : "25%"}
     zIndex={3}
     >
     <Divider
-    color={useColorModeValue("white", "black")}
-    transition={"250ms ease-in"}
-    orientation="vertical"
-    />
+        style={{ borderColor: "#C53030" }}
+        transition="250ms ease-in"
+        orientation="vertical"
+      />
       <FiLinkedin 
       size={"80px"}
       />
-     
       <FiGithub
-      margin
-      size={"80px"}
-      />
-      <FiFacebook 
       size={"80px"}
       />
       <FiMail
       size={"80px"}
       />
       <Divider
-    color={useColorModeValue("white", "black")}
-    transition={"250ms ease-in"}
-    orientation="vertical"
-    />
+        style={{ borderColor: "#C53030" }}
+        transition="250ms ease-in"
+        orientation="vertical"
+      />
     </Stack>
     </>
   )

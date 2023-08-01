@@ -1,9 +1,15 @@
 import { Box, Container, Flex, Heading, Stack, Text, Divider, useColorModeValue } from "@chakra-ui/react"
 import Particle from "../../Particle/Particle";
+import { useState } from "react";
 
 const Home = (props) => {
   const { intersectionRef, isVisible } = props
-  console.log(isVisible, "Home");
+  const [content, setContent] = useState(null)
+  // console.log(isVisible, "Home");
+  const dontRedirect = (e) => {
+    e.preventDefault();
+    setContent("New Content");
+  }
 
   return (
     <>
@@ -36,7 +42,21 @@ const Home = (props) => {
               style={{ wordSpacing: ".3em" }}
 
             >
-              HOWDY! My name is
+              <Text
+                as={"a"}
+                color={"#822727"}
+                href="https://www.youtube.com/watch?v=CwIAPKHUdvE" target="_blank"
+                position={"relative"}
+                _before={{
+                  backgroundColor: "#C53030",
+                }}
+                _hover={{
+                  color: "#C53030",
+                }}
+                >
+                {`Howdy! `}
+              </Text>
+              My name is
             </Text>
             <Heading
               textAlign={"left"}
@@ -48,7 +68,7 @@ const Home = (props) => {
               Nick Wooten.
             </Heading>
             <Divider
-              color={useColorModeValue("white", "black")}
+              style={{ borderColor: "#C53030" }}
               width={"65%"}
               transition={"250ms ease-in"}
 
@@ -74,6 +94,7 @@ const Home = (props) => {
             >
               I'm a software engineer based out of Houston, Tx. I love everything about writing code (especially the  
               <Text
+              as={"span"}
               textDecoration={"red wavy underline"}
               textDecorationStyle={"wavy"}
               textDecorationThickness={.5}

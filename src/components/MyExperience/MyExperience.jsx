@@ -4,7 +4,7 @@ import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react"
 
 const MyExperience = (props) => {
   const { intersectionRef, isVisible, } = props
-  console.log(isVisible, "MyExperience");
+  // console.log(isVisible, "MyExperience");
   return (
     <Flex
       alignItems={"center"}

@@ -16,8 +16,8 @@ const Nav = (props) => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [stopScroll, setStopScroll] = useState("initial")
   const { colorMode, toggleColorMode } = useColorMode()
-  console.log(isLargeScreen);
-  console.log(scrollDir, y)
+  // console.log(isLargeScreen);
+  // console.log(scrollDir, y)
   const scrollIntoView = (label) => {
     const section = document.getElementById(label)
     if (section) {
@@ -44,7 +44,7 @@ const Nav = (props) => {
         backgroundColor={
           menuOpen
             ? "transparent"
-            : useColorModeValue("rgba(14,17,17,.8)", "rgba(245,245,245,.8)")
+            : useColorModeValue("rgba(14,17,17, .97)", "rgba(245,245,245, .95)")
         }
         boxShadow={
           menuOpen
@@ -79,11 +79,6 @@ const Nav = (props) => {
           </>
         )
           : (
-            // <IconButton
-            // id='hamburgerMenu'
-            // icon={<Hamburger toggled={menuOpen}/>}
-            // onClick={() => setMenuOpen(!menuOpen)}
-            // />
             <Box
               style={{ marginRight: "40px" }}
             >
@@ -93,7 +88,6 @@ const Nav = (props) => {
                 size={40}
               />
             </Box>
-
           )
         }
       </HStack>

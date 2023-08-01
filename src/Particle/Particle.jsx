@@ -1,29 +1,27 @@
 import { useCallback, useEffect } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { background, useColorModeValue } from "@chakra-ui/react";
+import { background, useColorModeValue, useColorMode } from "@chakra-ui/react";
 
 
 
 const Particle = () => {
-    const colorMode = useColorModeValue("rgba(14,17,17)", "rgba(245,245,245)")
-    const inverseColorMode = useColorModeValue("rgba(245,245,245)", "rgba(14,17,17)")
+    const currentColor= useColorModeValue("rgba(14,17,17)", "rgba(245,245,245)")
+    const inverseCurrentColor = useColorModeValue("rgba(245,245,245)", "rgba(14,17,17)")
+    const { colorMode } = useColorMode()
     console.log(colorMode);
     const particlesInit = useCallback(async engine => {
-        console.log(engine)
         await loadFull(engine)
-    }, [colorMode])
+    }, [currentColor])
     const particlesLoaded = useCallback(async container => {
         await console.log(container)
-    }, [colorMode])
-
+    }, [currentColor])
     return (
         <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
-                // fullScreen: { enable: false },
                 fpsLimit: 120,
                 interactivity: {
                     events: {
@@ -33,7 +31,7 @@ const Particle = () => {
                         },
                         onHover: {
                             enable: true,
-                            mode: "repulse",
+                            mode: colorMode === "light" ? "attract" : "repulse",
                         },
                         resize: true,
                     },
@@ -49,7 +47,7 @@ const Particle = () => {
                 },
                 particles: {
                     color: {
-                        value: inverseColorMode,
+                        value: inverseCurrentColor,
                     },
                     collisions: {
                         enable: false,
@@ -69,7 +67,7 @@ const Particle = () => {
                             enable: true,
                             area: 1000,
                         },
-                        value: 10,
+                        value: 25,
                     },
                     opacity: {
                         value: 0.5,

@@ -14,6 +14,7 @@ import Contact from './components/Contact/Contact'
 import Nav from './components/Nav/Nav'
 import Particle from './Particle/Particle'
 import Social from './components/Social/Social'
+import Spotlight from './components/Spotlight/Spotlight'
 
 
 function App() {
@@ -27,10 +28,12 @@ function App() {
 
   return (
     <>
+    <Spotlight/>
       <VStack
         spacing={0}
         color={useColorModeValue("white", "black")}
       >
+        
         <Nav
           scrollDir={scrollDir}
           y={y}
