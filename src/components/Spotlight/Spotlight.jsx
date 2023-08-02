@@ -9,8 +9,8 @@ const Spotlight = () => {
   const [isLargeScreen] = useMediaQuery("(min-width: 1050px)")
   const handleMouseMovement = (event) => {
     setMouseLocation({
-      x: event.clientX, 
-      y: event.clientY, 
+      x: event.clientX,
+      y: event.clientY,
     })
   }
   useEffect(() => {
@@ -21,40 +21,38 @@ const Spotlight = () => {
   }, [])
 
   const generateGradientBackground = () => {
-    const gradientColors = [];
+    const gradientColors = []
     for (let i = 0; i <= 100; i++) {
-      const opacity = i / 100
+      const opacity = i / 125
       const stop = i
       gradientColors.push(`rgba(0, 0, 0, ${opacity}) ${stop}%`)
     }
-
     return `radial-gradient(circle at ${mouseLocation.x}px ${mouseLocation.y}px, ${gradientColors.join(", ")})`
   }
   return (
     <>
-    <Portal>
-      <Box
-        position="fixed"
-        top={0}
-        left={0}
-        width="100vw"
-        height="100vh"
-        pointerEvents="none"
-        zIndex={9999}
-        onMouseMove={handleMouseMovement}
-      >
+      <Portal>
         <Box
-          position="absolute"
-          width="100%"
-          height="100%"
+          position="fixed"
+          top={0}
+          left={0}
+          width="100vw"
+          height="100vh"
           pointerEvents="none"
-          backgroundImage={generateGradientBackground()}
-        />
-      </Box>
-    </Portal>
+          zIndex={9999}
+          onMouseMove={handleMouseMovement}
+        >
+          <Box
+            position="absolute"
+            width="100%"
+            height="100%"
+            pointerEvents="none"
+            backgroundImage={generateGradientBackground()}
+          />
+        </Box>
+      </Portal>
     </>
   );
 };
 
- 
 export default Spotlight

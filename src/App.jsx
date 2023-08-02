@@ -28,12 +28,11 @@ function App() {
 
   return (
     <>
-    <Spotlight/>
+      <Spotlight />
       <VStack
         spacing={0}
         color={useColorModeValue("white", "black")}
       >
-        
         <Nav
           scrollDir={scrollDir}
           y={y}
@@ -61,7 +60,6 @@ function App() {
           intersectionRef={intersectionRef5}
           isVisible={isVisible5}
         />
-
       </VStack>
     </>
   )

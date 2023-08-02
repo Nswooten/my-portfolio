@@ -10,13 +10,14 @@ import { FaMoon, FaSun } from "react-icons/fa"
 import { Squash as Hamburger } from 'hamburger-react'
 
 
+
 const Nav = (props) => {
   const { scrollDir, y } = props
   const [isLargeScreen] = useMediaQuery("(min-width: 1050px)")
   const [menuOpen, setMenuOpen] = useState(false)
   const [stopScroll, setStopScroll] = useState("initial")
   const { colorMode, toggleColorMode } = useColorMode()
-  // console.log(isLargeScreen);
+  // console.log(isLargeScreen)
   // console.log(scrollDir, y)
   const scrollIntoView = (label) => {
     const section = document.getElementById(label)
@@ -57,7 +58,7 @@ const Nav = (props) => {
 
       >
         <IconButton
-          marginLeft={"10"}
+          marginLeft={"5vw"}
           icon={<ColorModeToggleIcon />}
           onClick={toggleColorMode}
           color={useColorModeValue("black", "white")}
@@ -80,7 +81,7 @@ const Nav = (props) => {
         )
           : (
             <Box
-              style={{ marginRight: "40px" }}
+              style={{ marginRight: "5vw" }}
             >
               <Hamburger
                 toggled={menuOpen}

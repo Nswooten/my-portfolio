@@ -6,7 +6,7 @@ import { background, useColorModeValue, useColorMode } from "@chakra-ui/react";
 
 
 const Particle = () => {
-    const currentColor= useColorModeValue("rgba(14,17,17)", "rgba(245,245,245)")
+    const currentColor = useColorModeValue("rgba(14,17,17)", "rgba(245,245,245)")
     const inverseCurrentColor = useColorModeValue("rgba(245,245,245)", "rgba(14,17,17)")
     const { colorMode } = useColorMode()
     console.log(colorMode);

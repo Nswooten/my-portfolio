@@ -1,14 +1,14 @@
 import { Box, Container, Flex, Heading, Stack, Text, Divider, useColorModeValue } from "@chakra-ui/react"
-import Particle from "../../Particle/Particle";
-import { useState } from "react";
+import Particle from "../../Particle/Particle"
+import { useState } from "react"
 
 const Home = (props) => {
   const { intersectionRef, isVisible } = props
   const [content, setContent] = useState(null)
-  // console.log(isVisible, "Home");
+  // console.log(isVisible, "Home")
   const dontRedirect = (e) => {
     e.preventDefault();
-    setContent("New Content");
+    setContent("New Content")
   }
 
   return (
@@ -23,13 +23,11 @@ const Home = (props) => {
         width={"80%"}
         marginRight={"10%"}
         display={"flex"}
-    
       >
         <Stack
           ref={intersectionRef}
           minHeight={"100vh"}
           height={"100vh"}
-          
         >
           <Box
             width={"100%"}
@@ -40,7 +38,6 @@ const Home = (props) => {
               textAlign={"left"}
               fontSize={"clamp(14px, 1.7vw, 16px)"}
               style={{ wordSpacing: ".3em" }}
-
             >
               <Text
                 as={"a"}
@@ -53,7 +50,7 @@ const Home = (props) => {
                 _hover={{
                   color: "#C53030",
                 }}
-                >
+              >
                 {`Howdy! `}
               </Text>
               My name is
@@ -63,7 +60,6 @@ const Home = (props) => {
               whiteSpace={"nowrap"}
               fontSize={"clamp(50px, 7.4vw, 80px)"}
               marginTop={"2vh"}
-
             >
               Nick Wooten.
             </Heading>
@@ -78,7 +74,6 @@ const Home = (props) => {
               fontSize={"clamp(30px, 3vw, 60px)"}
               whiteSpace={"nowrap"}
               marginTop={"1vh"}
-
             >
               Full-Stack Developer
             </Heading>
@@ -92,16 +87,14 @@ const Home = (props) => {
               marginTop={"3vh"}
               marginBottom={"3vh"}
             >
-              I'm a software engineer based out of Houston, Tx. I love everything about writing code (especially the  
+              I'm a software engineer based out of Houston, Tx. I love everything about writing code (especially the
               <Text
-              as={"span"}
-              textDecoration={"red wavy underline"}
-              textDecorationStyle={"wavy"}
-              textDecorationThickness={.5}
-
+                as={"span"}
+                textDecoration={"red wavy underline"}
+                textDecorationStyle={"wavy"}
+                textDecorationThickness={.5}
               >
-              {' bugs '}
-
+                {' bugs '}
               </Text>
               ). Currently, I'm looking for a position where I can continue to learn and grow as a developer.
             </Text>
@@ -112,7 +105,6 @@ const Home = (props) => {
               marginBottom={"vh"}
             >
               Have an opportunity for me? I look foward to
-
               <Text
                 as={"a"}
                 color={"#822727"}
@@ -140,13 +132,6 @@ const Home = (props) => {
             </Text>
           </Box>
         </Stack>
-        {/* <Stack>
-          <Box>
-            <Text>
-              animation
-            </Text>
-          </Box>
-        </Stack> */}
       </Flex>
     </>
 
