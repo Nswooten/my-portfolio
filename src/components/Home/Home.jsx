@@ -58,7 +58,7 @@ const Home = (props) => {
             <Heading
               textAlign={"left"}
               whiteSpace={"nowrap"}
-              fontSize={"clamp(50px, 7.4vw, 80px)"}
+              fontSize={{ base: "2rem", md: "clamp(3rem, 7.4vw, 5rem)" }}
               marginTop={"2vh"}
             >
               Nick Wooten.
@@ -71,7 +71,7 @@ const Home = (props) => {
             />
             <Heading
               textAlign={"left"}
-              fontSize={"clamp(30px, 3vw, 60px)"}
+              fontSize={{ base: "1rem", md: "clamp(2rem, 7.4vw, 2rem)" }}
               whiteSpace={"nowrap"}
               marginTop={"1vh"}
             >
