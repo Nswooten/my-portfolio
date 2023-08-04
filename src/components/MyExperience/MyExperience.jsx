@@ -81,8 +81,7 @@ const MyExperience = (props) => {
           orientation={isLargeScreen ? "vertical" : "horizontal"}
           width={isLargeScreen ? "40vw" : ""}
           size={"sm"}
-          colorScheme={useColorModeValue("white", "black")}
-          
+          colorScheme={useColorModeValue("white", "black")}          
         >
           <TabList
           width={isLargeScreen ? "" : "2vw"}
@@ -91,7 +90,6 @@ const MyExperience = (props) => {
           justifyContent={"space-around"}
           marginRight={"10"}
           paddingRight={isLargeScreen ? "2vw" : "horizontal"}
-          
           >
             <Tab
             justifyContent={"flex-start"}
@@ -164,7 +162,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(16px, 1vw, 18px)"}
+                fontSize={"clamp(16px, 1vw, 20px)"}
                 >
                   
                   Engineering Technican
@@ -173,95 +171,310 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
+                color={"#C53030"}
                 >
-                Vertice Oil Tools
+                <Text
+                    as={"a"}
+                    href="https://verticeoiltools.com/" target="_blank"
+                    color={"#822727"}
+                    position={"relative"}
+                    _before={{
+                      backgroundColor: "#C53030",
+                      borderRadius: "5px",
+                      bottom: -1,
+                      content: `""`,
+                      height: "2px",
+                      position: "absolute",
+                      transition: "200ms ease-out",
+                      width: 0
+                    }}
+                    _hover={{
+                      color: "#C53030",
+                      _before: {
+                        width: "100%"
+                      }
+                    }}
+                    >
+                      Vertice Oil Tools
+                    </Text>
+
                 </ListItem>
                 <ListItem
                 display={"flex"}
-                marginY={2}
+                marginY={"5vh"}
                 alignItems={"center"}
                 >
                 Current
                 </ListItem>
                 <ListItem
                 display={"flex"}
-                marginY={2}
+                marginY={"2vh"}
                 alignItems={"center"}
                 >
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                  <ListIcon as={ChevronRightIcon}  />
+                  Create custom fixtures for accurate data collection                </ListItem>
+                <ListItem
+                display={"flex"}
+                marginY={"2vh"}
+                alignItems={"center"}
+                >
+                  <ListIcon as={ChevronRightIcon}  />
+                  Ensure plans align with standards and optimize procedures
                 </ListItem>
                 <ListItem
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
                 >
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                  <ListIcon as={ChevronRightIcon}  />
+                  Execute tests, maintain equipment, and troubleshoot issues
+                </ListItem>
+              </List>
+            </TabPanel>
+            <TabPanel>
+            <List 
+                spacing={3}  
+                alignItems={"left"}
+                display={"flex"}
+                flexDirection={"column"}
+              >
+                <ListItem
+                display={"flex"}
+                marginY={2}
+                alignItems={"center"}
+                fontSize={"clamp(16px, 1vw, 20px)"}
+                >
+                  
+                  Software Engineering Fellow
+                </ListItem>
+                <ListItem
+                display={"flex"}
+                marginY={2}
+                alignItems={"center"}
+                color={"#C53030"}
+                >
+                  <Text
+                    as={"a"}
+                    href="https://generalassemb.ly/education/software-engineering-immersive" target="_blank"
+                    color={"#822727"}
+                    position={"relative"}
+                    _before={{
+                      backgroundColor: "#C53030",
+                      borderRadius: "5px",
+                      bottom: -1,
+                      content: `""`,
+                      height: "2px",
+                      position: "absolute",
+                      transition: "200ms ease-out",
+                      width: 0
+                    }}
+                    _hover={{
+                      color: "#C53030",
+                      _before: {
+                        width: "100%"
+                      }
+                    }}
+                    >
+                      General Assembly
+                    </Text>
+                </ListItem>
+                <ListItem
+                display={"flex"}
+                marginY={"5vh"}
+                alignItems={"center"}
+                >
+                March-June 2023
+                </ListItem>
+                <ListItem
+                display={"flex"}
+                marginY={"2vh"}
+                alignItems={"center"}
+                >
+                  <ListIcon as={ChevronRightIcon}  />
+                  Attended an 80+ hours/weekly bootcamp focused on full-stack software development
+                </ListItem>
+                <ListItem
+                display={"flex"}
+                marginY={"2vh"}
+                alignItems={"center"}
+                >
+                  <ListIcon as={ChevronRightIcon}  />
+                  Developed a portfolio using HTML/CSS/JS/TS, SQL, MongoDB, and Node
                 </ListItem>
                 <ListItem
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
                 >
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit ametLorem ipsum dolor sit amet
+                  <ListIcon as={ChevronRightIcon}  />
+                  Utilized Git version control and managed team repositories
                 </ListItem>
               </List>
             </TabPanel>
             <TabPanel>
-              <List spacing={3} >
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
+            <List 
+                spacing={3}  
+                alignItems={"left"}
+                display={"flex"}
+                flexDirection={"column"}
+              >
+                <ListItem
+                display={"flex"}
+                marginY={2}
+                alignItems={"center"}
+                fontSize={"clamp(16px, 1vw, 20px)"}
+                >
+                  
+                  Field Technician
                 </ListItem>
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
+                <ListItem
+                display={"flex"}
+                marginY={2}
+                alignItems={"center"}
+                color={"#C53030"}
+                >
+                <Text
+                    as={"a"}
+                    href="https://verticeoiltools.com/" target="_blank"
+                    color={"#822727"}
+                    position={"relative"}
+                    _before={{
+                      backgroundColor: "#C53030",
+                      borderRadius: "5px",
+                      bottom: -1,
+                      content: `""`,
+                      height: "2px",
+                      position: "absolute",
+                      transition: "200ms ease-out",
+                      width: 0
+                    }}
+                    _hover={{
+                      color: "#C53030",
+                      _before: {
+                        width: "100%"
+                      }
+                    }}
+                    >
+                      Vertice Oil Tools
+                    </Text>
                 </ListItem>
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
+                <ListItem
+                display={"flex"}
+                marginY={"5vh"}
+                alignItems={"center"}
+                >
+                June 2019 - March 2023
                 </ListItem>
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
+                <ListItem
+                display={"flex"}
+                marginY={"2vh"}
+                alignItems={"center"}
+                >
+                  <ListIcon as={ChevronRightIcon}  />
+                  Built, tested, sold and ran new product lines for customers, including ConocoPhillips                </ListItem>
+                <ListItem
+                display={"flex"}
+                marginY={"2vh"}
+                alignItems={"center"}
+                >
+                  <ListIcon as={ChevronRightIcon}  />
+                  Wrote the technical manuals for the downhole-tools sold and run by our company
                 </ListItem>
+                <ListItem
+                display={"flex"}
+                marginY={2}
+                alignItems={"center"}
+                >
+                  <ListIcon as={ChevronRightIcon}  />
+                  Coordinate rig operations, supervise crew activities, and promote a culture of safety.             
+                  </ListItem>
               </List>
             </TabPanel>
             <TabPanel>
-              <List spacing={3} >
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
+            <List 
+                spacing={3}  
+                alignItems={"left"}
+                display={"flex"}
+                flexDirection={"column"}
+              >
+                <ListItem
+                display={"flex"}
+                marginY={2}
+                alignItems={"center"}
+                fontSize={"clamp(16px, 1vw, 20px)"}
+                >
+                  
+                  Bachelor's Degree in Philosophy
                 </ListItem>
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
+                <ListItem
+                display={"flex"}
+                marginY={2}
+                alignItems={"center"}
+                color={"#C53030"}
+                >
+                <Text
+                    as={"a"}
+                    href="https://www.tamu.edu/index.html" target="_blank"
+                    color={"#822727"}
+                    position={"relative"}
+                    _before={{
+                      backgroundColor: "#C53030",
+                      borderRadius: "5px",
+                      bottom: -1,
+                      content: `""`,
+                      height: "2px",
+                      position: "absolute",
+                      transition: "200ms ease-out",
+                      width: 0
+                    }}
+                    _hover={{
+                      color: "#C53030",
+                      _before: {
+                        width: "100%"
+                      }
+                    }}
+                    >
+                      Texas A&M in College Station
+                    </Text>
                 </ListItem>
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
+                <ListItem
+                display={"flex"}
+                marginY={"5vh"}
+                alignItems={"center"}
+                >
+                Class of '18{'\u00A0'}
+                <Text
+                as={"span"}
+                color={"#822727"}
+              >
+                {' WHOOP! '}
+              </Text>
                 </ListItem>
-              </List>
-            </TabPanel>
-            <TabPanel>
-              <List spacing={3} >
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
+                <ListItem
+                display={"flex"}
+                marginY={"2vh"}
+                alignItems={"center"}
+                >
+                  <ListIcon as={ChevronRightIcon}  />
+                  <Text
+                  as={"span"}
+                  color={"#822727"}
+                  >
+                    Howdy, Dammit!
+                  </Text>
                 </ListItem>
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={ChevronRightIcon} color='green.500' />
-                  Lorem ipsum dolor sit amet
+                <ListItem
+                display={"flex"}
+                marginY={2}
+                alignItems={"center"}
+                >
+                  <ListIcon as={ChevronRightIcon}  />
+                  <Text
+                  as={"span"}
+                  color={"#822727"}
+                  >
+                    Thanks and Gig'em.
+                  </Text>
                 </ListItem>
               </List>
             </TabPanel>

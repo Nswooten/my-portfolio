@@ -47,7 +47,7 @@ const AboutMe = (props) => {
       >
         <Box
             width={"100%"}
-            marginTop={isLargeScreen ? "10vw" : "0vw"}
+            marginTop={isLargeScreen ? "7vw" : "0vw"}
           >
           <Box
           display={"flex"}
@@ -86,7 +86,7 @@ const AboutMe = (props) => {
           </Text>
           <Text
           marginTop={"2vh"}>
-            Today, I am now a proud graduate of Genrealy Assembly's Software Engineering Immersive Boot Camp. I am currently working part-time as an engineering technician at Vertice Oil Tools while I continue my search for a position in my new carreer. Currently, my main tools are JavaScript/TypeScript and React.
+            Today, I am now a proud graduate of General Assembly's Software Engineering Immersive Boot Camp. I am currently working part-time as an engineering technician at Vertice Oil Tools while I continue my search for a position in my new carreer. Currently, my main tools are JavaScript/TypeScript and React.
           </Text>
           <Text
           marginTop={"2vh"}>
