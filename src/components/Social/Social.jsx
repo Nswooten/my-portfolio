@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Stack, Text, Divider, useColorModeValue } from "@chakra-ui/react"
+import { Box, Flex, Heading, Stack, Text, Divider, useColorModeValue, Link, Icon } from "@chakra-ui/react"
 import { FiCodepen, FiGithub, FiLinkedin, FiFacebook, FiMail } from "react-icons/fi"
 import { useMediaQuery } from "@chakra-ui/react"
 
@@ -24,15 +24,54 @@ const Social = () => {
           transition="250ms ease-in"
           orientation="vertical"
         />
-        <FiLinkedin
-          size={"80px"}
-        />
-        <FiGithub
-          size={"80px"}
-        />
-        <FiMail
-          size={"80px"}
-        />
+        <Link
+          href={"https://www.linkedin.com/in/nick-wooten-a6802599/"}
+          target="_blank"
+          _before={{
+            backgroundColor: "#C53030",
+          }}
+          _hover={{
+            color: "#C53030",
+          }}
+        >
+          <Icon
+            as={FiLinkedin}
+            boxSize={12}
+            marginTop={"2px"}
+          />
+        </Link>
+        <Link
+          href={"https://github.com/Nswooten"}
+          target="_blank"
+          _before={{
+            backgroundColor: "#C53030",
+          }}
+          _hover={{
+            color: "#C53030",
+          }}
+        >
+          <Icon
+            as={FiGithub}
+            boxSize={12}
+            marginTop={"2px"}
+          />
+        </Link>
+        <Link
+          href={"mailto:nswooten@gmail.com"}
+          target="_blank"
+          _before={{
+            backgroundColor: "#C53030",
+          }}
+          _hover={{
+            color: "#C53030",
+          }}
+        >
+          <Icon
+            as={FiMail}
+            boxSize={12}
+            marginTop={"2px"}
+          />
+        </Link>
         <Divider
           style={{ borderColor: "#C53030" }}
           transition="250ms ease-in"

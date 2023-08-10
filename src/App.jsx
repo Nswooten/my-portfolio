@@ -29,6 +29,7 @@ function App() {
   return (
     <>
       <Spotlight />
+      <Particle />
       <VStack
         spacing={0}
         color={useColorModeValue("white", "black")}

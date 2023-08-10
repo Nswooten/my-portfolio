@@ -1,5 +1,4 @@
 import { Box, Container, Flex, Heading, Stack, Text, Divider, useColorModeValue } from "@chakra-ui/react"
-import Particle from "../../Particle/Particle"
 import { useState } from "react"
 
 const Home = (props) => {
@@ -13,7 +12,7 @@ const Home = (props) => {
 
   return (
     <>
-      <Particle />
+      
       <Flex
         id={"Home"}
         alignItems={"center"}
@@ -104,7 +103,7 @@ const Home = (props) => {
               marginTop={"1.5vh"}
               marginBottom={"vh"}
             >
-              Have an opportunity for me? I look foward to
+              Have an opportunity for me? I look forward to
               <Text
                 as={"a"}
                 color={"#822727"}

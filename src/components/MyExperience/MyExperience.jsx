@@ -13,7 +13,6 @@ import {
   List,
   ListItem,
   ListIcon,
-  UnorderedList,
 } from "@chakra-ui/react"
 import { useState } from "react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
@@ -38,7 +37,6 @@ const MyExperience = (props) => {
     height={"100vh"}
     justifyContent={"flex-start"}
     zIndex={1}
-    width={"80%"}
     marginRight={"10%"}
     display={"flex"}
     >
@@ -79,17 +77,18 @@ const MyExperience = (props) => {
         <Tabs
           index={selectedTab} onChange={handleTabChange}
           orientation={isLargeScreen ? "vertical" : "horizontal"}
-          width={isLargeScreen ? "40vw" : ""}
+          width={isLargeScreen ? "60vw" : ""}
           size={"sm"}
-          colorScheme={useColorModeValue("white", "black")}          
+          colorScheme={useColorModeValue("white", "black")}
         >
           <TabList
-          width={isLargeScreen ? "" : "2vw"}
+          width={isLargeScreen ? "" : "auto"}
           whiteSpace={isLargeScreen ? "nowrap" : ""}
           height={isLargeScreen ? "60vh" : "6vh"}
           justifyContent={"space-around"}
           marginRight={"10"}
-          paddingRight={isLargeScreen ? "2vw" : "horizontal"}
+          // paddingRight={isLargeScreen ? "2vw" : "horizontal"}
+          overflowX={isLargeScreen ? "" : ""}   
           >
             <Tab
             justifyContent={"flex-start"}
@@ -100,7 +99,7 @@ const MyExperience = (props) => {
             color={selectedTab === 0 ? "#C53030" : ""}
             outline={"none"}
             border={"none"}
-            fontSize={"clamp(16px, 1vw, 18px)"}
+            fontSize={"clamp(12px, 1vw, 18px)"}
             borderRadius={0}
             >
               Vertice Oil Tools
@@ -114,7 +113,7 @@ const MyExperience = (props) => {
             color={selectedTab === 1 ? "#C53030" : ""}
             outline={"none"}
             border={"none"}
-            fontSize={"clamp(16px, 1vw, 18px)"}
+            fontSize={"clamp(12px, 1vw, 18px)"}
             borderRadius={0}
             >
               General Assembly
@@ -128,7 +127,7 @@ const MyExperience = (props) => {
             color={selectedTab === 2 ? "#C53030" : ""}
             outline={"none"}
             border={"none"}
-            fontSize={"clamp(16px, 1vw, 18px)"}
+            fontSize={"clamp(12px, 1vw, 18px)"}
             borderRadius={0}
             >
               Vertice Oil Tools
@@ -142,7 +141,7 @@ const MyExperience = (props) => {
             color={selectedTab === 3 ? "#C53030" : ""}
             outline={"none"}
             border={"none"}
-            fontSize={"clamp(16px, 1vw, 18px)"}
+            fontSize={"clamp(12px, 1vw, 18px)"}
             borderRadius={0}
             >
               Texas A&M
@@ -386,7 +385,7 @@ const MyExperience = (props) => {
                 alignItems={"center"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
-                  Coordinate rig operations, supervise crew activities, and promote a culture of safety.             
+                  Coordinate rig operations, supervise crew activities, and promote a culture of safety             
                   </ListItem>
               </List>
             </TabPanel>
@@ -445,7 +444,8 @@ const MyExperience = (props) => {
                 Class of '18{'\u00A0'}
                 <Text
                 as={"span"}
-                color={"#822727"}
+                color={"#C53030"}
+                
               >
                 {' WHOOP! '}
               </Text>
@@ -458,7 +458,7 @@ const MyExperience = (props) => {
                   <ListIcon as={ChevronRightIcon}  />
                   <Text
                   as={"span"}
-                  color={"#822727"}
+                  color={"#C53030"}
                   >
                     Howdy, Dammit!
                   </Text>
@@ -471,7 +471,7 @@ const MyExperience = (props) => {
                   <ListIcon as={ChevronRightIcon}  />
                   <Text
                   as={"span"}
-                  color={"#822727"}
+                  color={"#C53030"}
                   >
                     Thanks and Gig'em.
                   </Text>
@@ -480,7 +480,6 @@ const MyExperience = (props) => {
             </TabPanel>
           </TabPanels>
         </Tabs>
-
         </Box>
       </Stack>
     </Flex>

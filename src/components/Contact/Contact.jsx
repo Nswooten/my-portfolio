@@ -22,7 +22,7 @@ const Contact = (props) => {
             Hire MEEEE
           </Text>
           <Heading>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis dolorem tempora hic, eveniet quas neque dolore. Eveniet earum accusantium, hic consequatur officiis ad ducimus debitis, ea amet similique officia.
+            
           </Heading>
         </Box>
       </Stack>
