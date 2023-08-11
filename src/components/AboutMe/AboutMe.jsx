@@ -5,8 +5,6 @@ import { useMediaQuery, Box, Flex, Heading, Stack, Text, Divider, HStack, Toolti
 const AboutMe = (props) => {
   const { intersectionRef, isVisible, } = props
   const [isLargeScreen] = useMediaQuery("(min-width: 1050px)")
-
-  // console.log(isVisible, "AboutMe");
   return (
     <Flex
       id={"About Me"}

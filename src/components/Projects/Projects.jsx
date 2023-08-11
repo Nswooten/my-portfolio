@@ -10,7 +10,6 @@ import Snake from "../../assets/Snake.png"
 const Projects = (props) => {
   const { intersectionRef, isVisible, } = props
   const [isLargeScreen] = useMediaQuery("(min-width: 1050px)")
-  // console.log(isVisible, "Projects");
   return (
     <Flex
       alignItems={"flex-start"}

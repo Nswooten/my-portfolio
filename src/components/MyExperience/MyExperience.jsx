@@ -27,8 +27,6 @@ const MyExperience = (props) => {
   const handleTabChange = (index) => {
     setSelectedTab(index)
   }
-  console.log(selectedTab);
-  // console.log(isVisible, "MyExperience");
   const [isExpanded, setIsExpanded] = useState()
   return (
     <Flex

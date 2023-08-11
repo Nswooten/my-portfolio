@@ -5,7 +5,6 @@ import ResumeButton from "../ResumeButton/ResumeButton"
 
 const Contact = (props) => {
   const { intersectionRef, isVisible, } = props
-  // console.log(isVisible, "Contact");
   return (
     <>
 

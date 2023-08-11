@@ -17,8 +17,7 @@ const Nav = (props) => {
   const [menuOpen, setMenuOpen] = useState(false)
   const [stopScroll, setStopScroll] = useState("initial")
   const { colorMode, toggleColorMode } = useColorMode()
-  // console.log(isLargeScreen)
-  // console.log(scrollDir, y)
+
   const scrollIntoView = (label) => {
     const section = document.getElementById(label)
     if (section) {

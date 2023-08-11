@@ -4,7 +4,6 @@ import { useState } from "react"
 const Home = (props) => {
   const { intersectionRef, isVisible } = props
   const [content, setContent] = useState(null)
-  // console.log(isVisible, "Home")
   const dontRedirect = (e) => {
     e.preventDefault();
     setContent("New Content")

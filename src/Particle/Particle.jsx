@@ -9,18 +9,17 @@ const Particle = () => {
     const currentColor = useColorModeValue("rgba(14,17,17)", "rgba(245,245,245)")
     const inverseCurrentColor = useColorModeValue("rgba(245,245,245)", "rgba(14,17,17)")
     const { colorMode } = useColorMode()
-    console.log(colorMode);
     const particlesInit = useCallback(async engine => {
         await loadFull(engine)
     }, [currentColor])
-    const particlesLoaded = useCallback(async container => {
-        await console.log(container)
-    }, [currentColor])
+    // const particlesLoaded = useCallback(async container => {
+    //     await console.log(container)
+    // }, [currentColor])
     return (
         <Particles
             id="tsparticles"
             init={particlesInit}
-            loaded={particlesLoaded}
+            // loaded={particlesLoaded}
             options={{
                 fpsLimit: 120,
                 interactivity: {

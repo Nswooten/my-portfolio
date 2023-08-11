@@ -3,7 +3,6 @@ import { useState, useCallback, useEffect } from "react"
 const useNavigation = () => {
   const [y, setY] = useState(window.scrollY)
   const [scrollDir, setScrollDir] = useState("")
-  // console.log(window);
 
   const handleNavigation = useCallback(
     e => {
