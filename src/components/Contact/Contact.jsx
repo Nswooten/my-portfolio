@@ -24,13 +24,15 @@ const Contact = (props) => {
           <Box
             marginTop={"20vh"}
           >
-            <Text>
+            <Text
+            fontSize={"clamp(14px, 1.7vw, 22px)"}
+            >
               Whats next?
             </Text>
             <Heading
             color={"#C53030"}
-            fontSize={{ base: "2rem", md: "clamp(3rem, 7.4vw, 4rem)" }}
-            marginTop={"10px"}
+            fontSize={{ base: "2rem", md: "clamp(3rem, 7.4vw, 5rem)" }}
+            marginTop={"3vh"}
             >
               Get In Touch
             </Heading>
@@ -38,7 +40,7 @@ const Contact = (props) => {
           <Box
           fontSize={"clamp(12px, 1.7vw, 20px)"}
           width={"30vw"}
-          marginTop={"10vh"}
+          marginTop={"6vh"}
           >
             <Text
             lineHeight={"2"}

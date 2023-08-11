@@ -35,7 +35,7 @@ const Home = (props) => {
             <Text
               whiteSpace={"nowrap"}
               textAlign={"left"}
-              fontSize={"clamp(14px, 1.7vw, 16px)"}
+              fontSize={"clamp(14px, 1.9vw, 22px)"}
               style={{ wordSpacing: ".3em" }}
             >
               <Text
@@ -57,7 +57,7 @@ const Home = (props) => {
             <Heading
               textAlign={"left"}
               whiteSpace={"nowrap"}
-              fontSize={{ base: "2rem", md: "clamp(3rem, 7.4vw, 5rem)" }}
+              fontSize={{ base: "2rem", md: "clamp(3rem, 7.4vw, 6rem)" }}
               marginTop={"2vh"}
             >
               Nick Wooten.
@@ -70,7 +70,7 @@ const Home = (props) => {
             />
             <Heading
               textAlign={"left"}
-              fontSize={{ base: "1rem", md: "clamp(2rem, 7.4vw, 2rem)" }}
+              fontSize={{ base: "1rem", md: "clamp(2rem, 7.4vw, 3rem)" }}
               whiteSpace={"nowrap"}
               marginTop={"1vh"}
             >
@@ -81,7 +81,7 @@ const Home = (props) => {
             width={"75%"}
           >
             <Text
-              fontSize={"clamp(14px, 1.7vw, 18px)"}
+              fontSize={"clamp(14px, 1.7vw, 22px)"}
               textAlign={"left"}
               marginTop={"3vh"}
               marginBottom={"3vh"}
@@ -98,7 +98,7 @@ const Home = (props) => {
               ). Currently, I'm looking for a position where I can continue to learn and grow as a developer.
             </Text>
             <Text
-              fontSize={"clamp(14px, 1.7vw, 20px)"}
+              fontSize={"clamp(14px, 1.7vw, 24px)"}
               textAlign={"left"}
               marginTop={"1.5vh"}
               marginBottom={"vh"}

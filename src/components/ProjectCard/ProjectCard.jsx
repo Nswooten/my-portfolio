@@ -18,6 +18,9 @@ const ProjectCard = (props) => {
   const handleMouseLeave = () => {
     setIsMouseOver(false)
   }
+  const italicStyle = {
+    fontStyle: 'italic',
+  }
   return (
     <Grid
       display={"grid"}
@@ -57,11 +60,20 @@ const ProjectCard = (props) => {
           Featured Project
         </Text>
         <Heading
-          fontSize={"clamp(20px, 5vw, 35px)"}
+          fontSize={"clamp(20px, 5vw, 40px)"}
           whiteSpace={"nowrap"}
           color={"#C53030"}
         >
-          {title}
+          {index === 2 && (
+            <>
+            {title} <span style={italicStyle}>(Shrek Themed)</span>
+            </>
+          )}
+          {index !== 2 && (
+            <>
+            {title}
+            </>
+          )}
         </Heading>
 
       </GridItem>

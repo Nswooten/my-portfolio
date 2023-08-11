@@ -72,7 +72,7 @@ const Projects = (props) => {
         >
           <ProjectCard
             index={2}
-            title="Snake (Shrek Themed)"
+            title={"Snake"}
             imageSrc={Snake}
             gitLink={"https://github.com/Nswooten/Blue-Flower-Red-Thorns"}
             appLink={"https://main--snake-blue-flower-red-thorns-theme.netlify.app/"}
