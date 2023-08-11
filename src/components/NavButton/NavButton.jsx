@@ -29,7 +29,7 @@ const NavButton = (props) => {
               width: "100%"
             }
           }}
-          fontSize={"clamp(12px, 1.7vw, 22px)"}
+          fontSize={"clamp(12px, 1.7vw, 18px)"}
           cursor={'pointer'}
           onClick={() => scroll(label)}
         >

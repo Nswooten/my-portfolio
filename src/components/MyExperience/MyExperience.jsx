@@ -209,7 +209,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Create custom fixtures for accurate data collection                </ListItem>
@@ -217,7 +217,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Ensure plans align with standards and optimize procedures
@@ -226,7 +226,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Execute tests, maintain equipment, and troubleshoot issues
@@ -292,7 +292,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Attended an 80+ hours/weekly bootcamp focused on full-stack software development
@@ -301,7 +301,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Developed a portfolio using HTML/CSS/JS/TS, SQL, MongoDB, and Node
@@ -310,7 +310,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Utilized Git version control and managed team repositories
@@ -376,7 +376,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Built, tested, sold and ran new product lines for customers, including ConocoPhillips                </ListItem>
@@ -384,7 +384,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Wrote the technical manuals for the downhole-tools sold and run by our company
@@ -393,7 +393,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Coordinate rig operations, supervise crew activities, and promote a culture of safety             
@@ -466,7 +466,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   <Text
@@ -480,7 +480,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 20px)"}
+                fontSize={"clamp(12px, 1.7vw, 16px)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   <Text
