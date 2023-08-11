@@ -1,5 +1,5 @@
-import { Box, Flex, Heading, Stack, Text, Divider, useColorModeValue, Link, Icon } from "@chakra-ui/react"
-import { FiCodepen, FiGithub, FiLinkedin, FiFacebook, FiMail } from "react-icons/fi"
+import { Stack, Divider, Link, Icon } from "@chakra-ui/react"
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi"
 import { useMediaQuery } from "@chakra-ui/react"
 
 

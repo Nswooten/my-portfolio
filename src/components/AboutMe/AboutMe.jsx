@@ -1,6 +1,5 @@
 import SkillIcon from "../SkillIcon/SkillIcon"
-import { lazy } from "react";
-import { useMediaQuery, Box, Flex, Heading, Stack, Text, Divider, HStack, Tooltip } from "@chakra-ui/react"
+import { useMediaQuery, Box, Flex, Heading, Stack, Text, Divider, HStack } from "@chakra-ui/react"
 
 const AboutMe = (props) => {
   const { intersectionRef, isVisible, } = props

@@ -52,7 +52,7 @@ const Spotlight = () => {
         </Box>
       </Portal>
     </>
-  );
-};
+  )
+}
 
 export default Spotlight

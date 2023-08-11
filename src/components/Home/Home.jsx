@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Heading, Stack, Text, Divider, useColorModeValue } from "@chakra-ui/react"
+import { Box, Flex, Heading, Stack, Text, Divider} from "@chakra-ui/react"
 import { useState } from "react"
 
 const Home = (props) => {

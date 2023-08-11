@@ -1,8 +1,7 @@
-import { Box, SimpleGrid, GridItem, Grid, Image, Heading, Text, useColorModeValue, Divider, Flex, Icon, Link } from '@chakra-ui/react'
+import { Box, GridItem, Grid, Image, Heading, Text, useColorModeValue, Icon, Link } from '@chakra-ui/react'
 import { useState } from 'react'
 import SkillIcon from "../SkillIcon/SkillIcon"
 import { FiGithub, FiExternalLink } from "react-icons/fi"
-import { SmallAddIcon } from '@chakra-ui/icons'
 
 
 

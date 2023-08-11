@@ -17,7 +17,6 @@ import {
 import { useState } from "react"
 import { ChevronRightIcon } from "@chakra-ui/icons"
 import { useMediaQuery, useColorModeValue } from "@chakra-ui/react"
-// import useOnScreen from "../../hooks/useOnScreen";
 
 
 const MyExperience = (props) => {
@@ -27,7 +26,6 @@ const MyExperience = (props) => {
   const handleTabChange = (index) => {
     setSelectedTab(index)
   }
-  const [isExpanded, setIsExpanded] = useState()
   return (
     <Flex
     id={"My Experience"}

@@ -1,6 +1,6 @@
 import { Box, Flex, Stack, Text, Container, Heading, Grid, GridItem, useMediaQuery, Divider } from "@chakra-ui/react"
 import ProjectCard from "../ProjectCard/ProjectCard"
-import NET from "../../assets/net.png"
+import NET from "../../assets/NET.png"
 import Opinionated from "../../assets/Opinionated.png"
 import Snake from "../../assets/Snake.png"
 
