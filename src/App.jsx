@@ -17,6 +17,7 @@ import Social from './components/Social/Social'
 import Spotlight from './components/Spotlight/Spotlight'
 
 
+
 function App() {
 
   const [y, scrollDir] = useNavigation()

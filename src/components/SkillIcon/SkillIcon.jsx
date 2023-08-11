@@ -44,7 +44,7 @@ const SkillIcon = (props) => {
                 <Icon
                     as={IconComponent}
                     borderRadius={5}
-                    boxSize={6}
+                    boxSize={['5', '9']}
                     color={color}
                     _hover={{
                         transform: "scale(1.1)",

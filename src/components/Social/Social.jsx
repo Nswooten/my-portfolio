@@ -13,7 +13,7 @@ const Social = () => {
         alignItems={"center"}
         justify="center"
         position={"fixed"}
-        right={{ base: 1, sm: 20, lg: 150 }}
+        right={{ base: 10, sm: 20, lg: 150 }}
         width={"11vw"}
         height={"60vh"}
         marginTop={isLargeScreen ? "10%" : "25%"}
@@ -36,7 +36,7 @@ const Social = () => {
         >
           <Icon
             as={FiLinkedin}
-            boxSize={12}
+            boxSize={['5', '12']} 
             marginTop={"2px"}
           />
         </Link>
@@ -52,7 +52,7 @@ const Social = () => {
         >
           <Icon
             as={FiGithub}
-            boxSize={12}
+            boxSize={['5', '12']} 
             marginTop={"2px"}
           />
         </Link>
@@ -68,7 +68,7 @@ const Social = () => {
         >
           <Icon
             as={FiMail}
-            boxSize={12}
+            boxSize={['5', '12']}            
             marginTop={"2px"}
           />
         </Link>

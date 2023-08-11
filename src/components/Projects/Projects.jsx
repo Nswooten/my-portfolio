@@ -32,6 +32,7 @@ const Projects = (props) => {
           marginTop={"2vh"}
           mb="2rem"
           margin={"2vw"}
+          color={"#C53030"}
         >
           Apps
         </Heading>
@@ -53,7 +54,7 @@ const Projects = (props) => {
             imageSrc={NET}
             gitLink={"https://github.com/Nswooten/never-enough-thyme-front-end"}
             appLink={"https://never-enough-thyme.netlify.app/"}
-            description="lorem ipsum loquitor lorem ipsum loquitor lorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitor" />
+            description="Experience gardening like never before through this user-friendly web app. Developed with TypeScript and React, enjoy a dynamic interface while SQL and Sequelize manage data seamlessly. Rest assured, your data is secure with JWT authentication. Thanks to Node.js, the server runs smoothly, and Vite guarantees swift loading. Design garden beds with custom dimensions and watch as this app intuitively arranges seeds based on manufacturer spacing recommendations. Effortlessly cultivate your garden with this blend of modern technologies." />
         </GridItem>
         <GridItem
           gridArea={"2 / 1 / 3 / 2"}
@@ -64,7 +65,7 @@ const Projects = (props) => {
             imageSrc={Opinionated}
             gitLink={"https://github.com/Nswooten/opinionated"}
             appLink={"https://opinionated.fly.dev/"}
-            description="lorem ipsum loquitor lorem ipsum loquitor lorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitor" />
+            description="Presenting Opinionated: A MEN stack project driven by passion. Crafted using JavaScript, ExpressJS, NodeJS, and MongoDB, this app enables users to express opinions and ratings on various media. With Google OAuth for secure logins and EJS for dynamic views, Opinionated brings people together to share insights. Join a community of media enthusiasts, where opinions matter and discoveries are celebrated." />
         </GridItem>
         <GridItem
           gridArea={"3 / 1 / 4 / 2"}
@@ -75,7 +76,7 @@ const Projects = (props) => {
             imageSrc={Snake}
             gitLink={"https://github.com/Nswooten/Blue-Flower-Red-Thorns"}
             appLink={"https://main--snake-blue-flower-red-thorns-theme.netlify.app/"}
-            description="lorem ipsum loquitor lorem ipsum loquitor lorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitorlorem ipsum loquitor" />
+            description="This is my first project that I've created. While the code and technologies used may be somewhat basic, I believe you might enjoy witnessing the progress I've made in the last 5 months. As a bonus, I thought you'd also like to have a little fun playing Snake." />
         </GridItem>
       </Grid>
     </Flex>

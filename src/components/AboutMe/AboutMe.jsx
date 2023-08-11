@@ -14,7 +14,7 @@ const AboutMe = (props) => {
       height={"100vh"}
       justifyContent={"flex-start"}
       zIndex={1}
-      width={{ base: "100%", md: "80%" }}
+      width={{ base: "100%", sm: "60%", md: "80%" }}
       marginRight={"10%"}
       display={"flex"}
       py={{ base: "2rem", md: "4rem" }}
@@ -56,11 +56,11 @@ const AboutMe = (props) => {
           <Box
             display={"flex"}
             flexDirection={"column"}
-            fontSize={"clamp(14px, 1.7vw, 16px)"}
+            fontSize={"clamp(12px, 1.7vw, 20px)"}
           >
             <Text
             >
-              I have a passion for utilizing logic to solve problems in creative, yet practical ways. I honed the skills necessary to effectively pursue this passion while studying philosophy at A&M. Since then, I've worked in the oilfield as a field engineer, and although actualizing, I needed a carreer with a work-life balance more codusive to happiness. Last year, I made the descision to transition carreers to software engineering.
+              I have a passion for utilizing logic to solve problems in creative, yet practical ways. I honed the skills necessary to effectively pursue this passion while studying philosophy at A&M. Since then, I've worked in the oilfield as a field engineer, and although actualizing in many ways, I needed a carreer with a work-life balance more codusive to happiness. Last year, I made the descision to transition carreers to software engineering.
             </Text>
             <Text
               marginTop={"2vh"}>

@@ -49,6 +49,7 @@ const ProjectCard = (props) => {
         display={"flex"}
         flexDirection={"column"}
         alignItems={"flex-end"}
+        justifyContent={"flex-end"}
       >
         <Text
         fontSize={"clamp(12px, 1.8vw, 15px)"}
@@ -58,6 +59,7 @@ const ProjectCard = (props) => {
         <Heading
           fontSize={"clamp(20px, 5vw, 35px)"}
           whiteSpace={"nowrap"}
+          color={"#C53030"}
         >
           {title}
         </Heading>
@@ -68,10 +70,21 @@ const ProjectCard = (props) => {
         backgroundColor={useColorModeValue("rgba(34, 37, 37, .9)", "rgba(225, 225, 225, .9)")}
         zIndex={2}
         borderRadius={"4px"}
+        
       >
-        <Text>
+        <Box
+        display={"flex"}
+        alignContent={"right"}
+        >
+        <Text
+        margin={"20px"}
+        fontSize={"clamp(12px, 1.8vw, 18px)"}
+        
+        >
           {description}
         </Text>
+
+        </Box>
 
       </GridItem>
       <GridItem
@@ -121,7 +134,7 @@ const ProjectCard = (props) => {
           >
             <Icon
               as={FiGithub}
-              boxSize={5}
+              boxSize={['3', '8']}              
               marginTop={"5px"}
               marginRight={"5px"}
             />
@@ -138,7 +151,7 @@ const ProjectCard = (props) => {
           >
             <Icon
               as={FiExternalLink}
-              boxSize={5}
+              boxSize={['3', '8']}
               href={appLink}
               marginTop={"5px"}
               marginRight={"5px"}
