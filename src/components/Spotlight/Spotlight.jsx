@@ -31,7 +31,9 @@ const Spotlight = () => {
   }
   return (
     <>
-      <Portal>
+      <Portal
+      id={"spotlight"}
+      >
         <Box
           position="fixed"
           top={0}

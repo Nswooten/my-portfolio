@@ -41,7 +41,7 @@ const Projects = (props) => {
         gridTemplateColumns={"1fr"}
         gridTemplateRows={"repeat(3, 1fr)"}
         position={"relative"}
-        width={"65vw"}
+        width={"70vw"}
         justifyContent={"center"}
       >
         <GridItem
@@ -53,7 +53,7 @@ const Projects = (props) => {
             imageSrc={NET}
             gitLink={"https://github.com/Nswooten/never-enough-thyme-front-end"}
             appLink={"https://never-enough-thyme.netlify.app/"}
-            description="Experience gardening like never before through this user-friendly web app. Developed with TypeScript and React, enjoy a dynamic interface while SQL and Sequelize manage data seamlessly. Rest assured, your data is secure with JWT authentication. Thanks to Node.js, the server runs smoothly, and Vite guarantees swift loading. Design garden beds with custom dimensions and watch as this app intuitively arranges seeds based on manufacturer spacing recommendations. Effortlessly cultivate your garden with this blend of modern technologies." />
+            description="Experience gardening like never before through this user-friendly web app. Developed with TypeScript and React, enjoy a dynamic interface while SQL and Sequelize manage data seamlessly. Rest assured, your data is secure with JWT authentication. Design garden beds with custom dimensions and watch as this app intuitively arranges seeds based on manufacturer spacing recommendations." />
         </GridItem>
         <GridItem
           gridArea={"2 / 1 / 3 / 2"}

@@ -52,6 +52,7 @@ const ProjectCard = (props) => {
         flexDirection={"column"}
         alignItems={"flex-end"}
         justifyContent={"flex-end"}
+        zIndex={3}
       >
         <Text
         fontSize={"clamp(12px, 1.8vw, 15px)"}
@@ -59,7 +60,7 @@ const ProjectCard = (props) => {
           Featured Project
         </Text>
         <Heading
-          fontSize={"clamp(20px, 5vw, 40px)"}
+          fontSize={"clamp(14px, 5vw, 40px)"}
           whiteSpace={"nowrap"}
           color={"#C53030"}
         >
@@ -86,10 +87,13 @@ const ProjectCard = (props) => {
         <Box
         display={"flex"}
         alignContent={"right"}
+        maxHeight={"200px"}
+        overflowX={"hidden"}
+        textOverflow={"clip"}
         >
         <Text
         margin={"20px"}
-        fontSize={"clamp(12px, 1.8vw, 18px)"}
+        fontSize={"clamp(8px, 1vw, 18px)"}
         
         >
           {description}

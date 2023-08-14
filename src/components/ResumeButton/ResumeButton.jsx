@@ -7,6 +7,7 @@ const ResumeButton = (props) => {
   const { isLargeScreen } = props
   return (
     <Button
+      fontSize={"clamp(12px, 1.7vw, 16px)"}
       border={"1px solid lightgrey"}
       color={useColorModeValue("black", "white")}
       bgColor={useColorModeValue("white", "black")}
@@ -16,6 +17,7 @@ const ResumeButton = (props) => {
         bgColor: useColorModeValue("black", "white"),
         border: "1px solid darkGrey"
       }}
+      
     >
       Resume
     </Button>
