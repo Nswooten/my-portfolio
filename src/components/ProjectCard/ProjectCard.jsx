@@ -167,7 +167,6 @@ const ProjectCard = (props) => {
             <Icon
               as={FiExternalLink}
               boxSize={['3', '8']}
-              href={appLink}
               marginTop={"5px"}
               marginRight={"5px"}
             />

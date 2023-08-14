@@ -13,7 +13,7 @@ const Social = () => {
         alignItems={"center"}
         justify="center"
         position={"fixed"}
-        right={{ base: 10, sm: 20, lg: 150 }}
+        right={{ base: 10, sm: 20, lg: "5vw" }}
         width={"11vw"}
         height={"60vh"}
         marginTop={isLargeScreen ? "10%" : "25%"}
