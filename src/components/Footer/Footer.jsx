@@ -5,8 +5,10 @@ const Footer = () => {
 
   return (
     <Box
-      marginBottom={"3vh"}
-      color={"#C53030"}
+    display={"flex"}
+    flexDirection={"column"}
+    color={"#C53030"}
+    height={"5vh"}
     >
       <Text>
         Designed and Built by Nick Wooten

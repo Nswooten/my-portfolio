@@ -15,6 +15,7 @@ import Nav from './components/Nav/Nav'
 import Particle from './Particle/Particle'
 import Social from './components/Social/Social'
 import Spotlight from './components/Spotlight/Spotlight'
+import Footer from './components/Footer/Footer'
 
 
 
@@ -62,6 +63,7 @@ function App() {
           intersectionRef={intersectionRef5}
           isVisible={isVisible5}
         />
+        <Footer/>
       </VStack>
     </>
   )

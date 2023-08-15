@@ -36,7 +36,7 @@ const Social = () => {
         >
           <Icon
             as={FiLinkedin}
-            boxSize={['5', '12']} 
+            boxSize={['5', '10']} 
             marginTop={"2px"}
           />
         </Link>
@@ -52,7 +52,7 @@ const Social = () => {
         >
           <Icon
             as={FiGithub}
-            boxSize={['5', '12']} 
+            boxSize={['5', '10']} 
             marginTop={"2px"}
           />
         </Link>
@@ -68,7 +68,7 @@ const Social = () => {
         >
           <Icon
             as={FiMail}
-            boxSize={['5', '12']}            
+            boxSize={['5', '10']}            
             marginTop={"2px"}
           />
         </Link>

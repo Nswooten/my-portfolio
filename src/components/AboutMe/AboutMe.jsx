@@ -23,8 +23,7 @@ const AboutMe = (props) => {
         maxHeight={"100vh"}
       >
         <Box
-          width={"100%"}
-          marginTop={isLargeScreen ? "7vw" : "0vw"}
+          marginTop={isLargeScreen ? "5vh" : "0vw"}
         >
           <Box
             display={"flex"}
@@ -37,7 +36,7 @@ const AboutMe = (props) => {
             <Heading
               textAlign={"center"}
               whiteSpace={"nowrap"}
-              fontSize={{ base: "2rem", md: "clamp(3rem, 7.4vw, 4rem)" }}
+              fontSize={"clamp(3rem, 4rem, 5rem)"}
               marginTop={"2vh"}
               mb="2rem"
               margin={"2vw"}
@@ -53,7 +52,7 @@ const AboutMe = (props) => {
           <Box
             display={"flex"}
             flexDirection={"column"}
-            fontSize={"clamp(12px, 1.7vw, 20px)"}
+            fontSize={"clamp(1rem, 1.1rem, 1.6rem)"}
           >
             <Text
             >

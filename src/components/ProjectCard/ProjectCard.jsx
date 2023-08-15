@@ -44,6 +44,7 @@ const ProjectCard = (props) => {
           transition="filter 0.3s"
           zIndex={1}
           borderRadius={"4px"}
+        
         />
       </GridItem>
       <GridItem
@@ -55,12 +56,12 @@ const ProjectCard = (props) => {
         zIndex={3}
       >
         <Text
-        fontSize={"clamp(12px, 1.8vw, 15px)"}
+        fontSize={"clamp(1rem, 1.1rem, 1.6rem)"}
         >
           Featured Project
         </Text>
         <Heading
-          fontSize={"clamp(14px, 5vw, 40px)"}
+          fontSize={"clamp(2rem, 2rem, 2rem)"}
           whiteSpace={"nowrap"}
           color={"#C53030"}
         >
@@ -87,13 +88,13 @@ const ProjectCard = (props) => {
         <Box
         display={"flex"}
         alignContent={"right"}
-        maxHeight={"200px"}
+       
         overflowX={"hidden"}
         textOverflow={"clip"}
         >
         <Text
         margin={"20px"}
-        fontSize={"clamp(8px, 1vw, 18px)"}
+        fontSize={"clamp(.8rem, .9rem, 1.2rem)"}
         
         >
           {description}

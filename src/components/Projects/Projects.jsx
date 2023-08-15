@@ -27,7 +27,7 @@ const Projects = (props) => {
         <Heading
           textAlign={"center"}
           whiteSpace={"nowrap"}
-          fontSize={{ base: "2rem", md: "clamp(3rem, 7.4vw, 4rem)" }}
+          fontSize={"clamp(3rem, 4rem, 5rem)"}
           marginTop={"2vh"}
           mb="2rem"
           margin={"2vw"}
@@ -41,7 +41,7 @@ const Projects = (props) => {
         gridTemplateColumns={"1fr"}
         gridTemplateRows={"repeat(3, 1fr)"}
         position={"relative"}
-        width={"70vw"}
+        width={"80vw"}
         justifyContent={"center"}
       >
         <GridItem
@@ -53,7 +53,7 @@ const Projects = (props) => {
             imageSrc={NET}
             gitLink={"https://github.com/Nswooten/never-enough-thyme-front-end"}
             appLink={"https://never-enough-thyme.netlify.app/"}
-            description="Experience gardening like never before through this user-friendly web app. Developed with TypeScript and React, enjoy a dynamic interface while SQL and Sequelize manage data seamlessly. Rest assured, your data is secure with JWT authentication. Design garden beds with custom dimensions and watch as this app intuitively arranges seeds based on manufacturer spacing recommendations." />
+            description="Experience gardening in a fresh way through this user-friendly web app. Crafted with TypeScript and React, enjoy a dynamic interface while SQL and Sequelize seamlessly manage data. JWT is used for authentication. Design garden beds with custom dimensions and watch as the app intuitively arranges seeds based on manufacturer spacing recommendations." />
         </GridItem>
         <GridItem
           gridArea={"2 / 1 / 3 / 2"}
@@ -64,7 +64,7 @@ const Projects = (props) => {
             imageSrc={Opinionated}
             gitLink={"https://github.com/Nswooten/opinionated"}
             appLink={"https://opinionated.fly.dev/"}
-            description="Presenting Opinionated: A MEN stack project driven by passion. Crafted using JavaScript, ExpressJS, NodeJS, and MongoDB, this app enables users to express opinions and ratings on various media. With Google OAuth for secure logins and EJS for dynamic views, Opinionated brings people together to share insights. Join a community of media enthusiasts, where opinions matter and discoveries are celebrated." />
+            description="Opinionated is a web app built using MongoDB, Express.js, and Node.js (MEN stack). It enables users to share opinions and ratings on media content. Google OAuth ensures secure logins, while EJS provides dynamic views. This platform fosters a community of media enthusiasts to exchange insights." />
         </GridItem>
         <GridItem
           gridArea={"3 / 1 / 4 / 2"}

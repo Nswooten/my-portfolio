@@ -59,7 +59,7 @@ const MyExperience = (props) => {
         <Heading
               textAlign={"center"}
               whiteSpace={"nowrap"}
-              fontSize={{ base: "2rem", md: "clamp(3rem, 7.4vw, 4rem)" }}
+              fontSize={"clamp(3rem, 4rem, 5rem)"}
               marginTop={"2vh"}
               marginBottom={"5vh"}
               mb="2rem"
@@ -79,15 +79,13 @@ const MyExperience = (props) => {
           width={isLargeScreen ? "60vw" : ""}
           size={"sm"}
           colorScheme={useColorModeValue("white", "black")}
-          marginLeft={"20vw"}
         >
           <TabList
           width={isLargeScreen ? "" : "auto"}
           whiteSpace={isLargeScreen ? "nowrap" : ""}
           height={isLargeScreen ? "60vh" : "6vh"}
           justifyContent={"space-around"}
-          marginRight={"7vw"}
-          // paddingRight={isLargeScreen ? "2vw" : "horizontal"}
+          marginRight={"5vw"}
           overflowX={isLargeScreen ? "" : ""}   
           >
             <Tab
@@ -99,7 +97,7 @@ const MyExperience = (props) => {
             color={selectedTab === 0 ? "#C53030" : ""}
             outline={"none"}
             border={"none"}
-            fontSize={"clamp(20px, 2vw, 20px)"}
+            fontSize={"clamp(1rem, 1.2rem, 2rem)"}
             borderRadius={0}
             >
               Vertice Oil Tools
@@ -113,7 +111,7 @@ const MyExperience = (props) => {
             color={selectedTab === 1 ? "#C53030" : ""}
             outline={"none"}
             border={"none"}
-            fontSize={"clamp(20px, 2vw, 20px)"}
+            fontSize={"clamp(1rem, 1.2rem, 2rem)"}
             borderRadius={0}
             >
               General Assembly
@@ -127,7 +125,7 @@ const MyExperience = (props) => {
             color={selectedTab === 2 ? "#C53030" : ""}
             outline={"none"}
             border={"none"}
-            fontSize={"clamp(20px, 2vw, 20px)"}
+            fontSize={"clamp(1rem, 1.2rem, 2rem)"}
             borderRadius={0}
             >
               Vertice Oil Tools
@@ -141,7 +139,7 @@ const MyExperience = (props) => {
             color={selectedTab === 3 ? "#C53030" : ""}
             outline={"none"}
             border={"none"}
-            fontSize={"clamp(20px, 2vw, 20px)"}
+            fontSize={"clamp(1rem, 1.2rem, 2rem)"}
             >
               Texas A&M
             </Tab>
@@ -160,7 +158,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(30px, 2vw, 35px)"}
+                fontSize={"clamp(2rem, 2rem, 2rem)"}
                 >
                   
                   Engineering Technican
@@ -173,7 +171,7 @@ const MyExperience = (props) => {
                 >
                 <Text
                     as={"a"}
-                    fontSize={"clamp(25px, 2vw, 30px)"}
+                    fontSize={"clamp(1rem, 1.5rem, 2rem)"}
                     href="https://verticeoiltools.com/" target="_blank"
                     color={"#822727"}
                     position={"relative"}
@@ -209,7 +207,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Create custom fixtures for accurate data collection                </ListItem>
@@ -217,7 +215,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Ensure plans align with standards and optimize procedures
@@ -226,7 +224,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Execute tests, maintain equipment, and troubleshoot issues
@@ -243,8 +241,9 @@ const MyExperience = (props) => {
                 <ListItem
                 display={"flex"}
                 marginY={2}
-                alignItems={"center"}
-                fontSize={"clamp(30px, 2vw, 35px)"}
+                alignItems={"flex-start"}
+                fontSize={"clamp(2rem, 2rem, 2rem)"}
+                whiteSpace={"nowrap"}
                 >
                   
                   Software Engineering Fellow
@@ -257,7 +256,7 @@ const MyExperience = (props) => {
                 >
                   <Text
                     as={"a"}
-                    fontSize={"clamp(25px, 2vw, 30px)"}
+                    fontSize={"clamp(1rem, 1.5rem, 2rem)"}
                     href="https://generalassemb.ly/education/software-engineering-immersive" target="_blank"
                     color={"#822727"}
                     position={"relative"}
@@ -292,7 +291,8 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
+                whiteSpace={"nowrap"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Attended an 80+ hours/weekly bootcamp focused on full-stack software development
@@ -301,7 +301,8 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
+                whiteSpace={"nowrap"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Developed a portfolio using HTML/CSS/JS/TS, SQL, MongoDB, and Node
@@ -310,7 +311,8 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
+                whiteSpace={"nowrap"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Utilized Git version control and managed team repositories
@@ -328,7 +330,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(30px, 2vw, 35px)"}
+                fontSize={"clamp(2rem, 2rem, 2rem)"}
                 >
                   
                   Field Technician
@@ -341,7 +343,7 @@ const MyExperience = (props) => {
                 >
                 <Text
                     as={"a"}
-                    fontSize={"clamp(25px, 2vw, 30px)"}
+                    fontSize={"clamp(1rem, 1.5rem, 2rem)"}
                     href="https://verticeoiltools.com/" target="_blank"
                     color={"#822727"}
                     position={"relative"}
@@ -376,7 +378,9 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
+                whiteSpace={"nowrap"}
+                overflowX={"hidden"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Built, tested, sold and ran new product lines for customers, including ConocoPhillips                </ListItem>
@@ -384,7 +388,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Wrote the technical manuals for the downhole-tools sold and run by our company
@@ -393,7 +397,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   Coordinate rig operations, supervise crew activities, and promote a culture of safety             
@@ -411,7 +415,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(30px, 2vw, 35px)"}
+                fontSize={"clamp(2rem, 2rem, 2rem)"}
                 >
                   
                   Bachelor's Degree in Philosophy
@@ -424,7 +428,7 @@ const MyExperience = (props) => {
                 >
                 <Text
                     as={"a"}
-                    fontSize={"clamp(25px, 2vw, 30px)"}
+                    fontSize={"clamp(1rem, 1.5rem, 2rem)"}
                     href="https://www.tamu.edu/index.html" target="_blank"
                     color={"#822727"}
                     position={"relative"}
@@ -466,7 +470,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={"2vh"}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   <Text
@@ -480,7 +484,7 @@ const MyExperience = (props) => {
                 display={"flex"}
                 marginY={2}
                 alignItems={"center"}
-                fontSize={"clamp(12px, 1.7vw, 16px)"}
+                fontSize={"clamp(1rem, 1rem, 1rem)"}
                 >
                   <ListIcon as={ChevronRightIcon}  />
                   <Text

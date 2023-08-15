@@ -1,5 +1,4 @@
 import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/react"
-import Footer from "../Footer/Footer"
 import ResumeButton from "../ResumeButton/ResumeButton"
 
 
@@ -12,7 +11,7 @@ const Contact = (props) => {
         alignItems={"center"}
         flexDirection={"column"}
         justifyContent={"space-between"}
-        height={"100vh"}
+        height={"95vh"}
         id="Contact"
         zIndex={1}
       >
@@ -21,25 +20,26 @@ const Contact = (props) => {
           flexBasis={{ base: 0, md: 0 }}
         >
           <Box
-            marginTop={"20vh"}
+            marginTop={"15vh"}
           >
             <Text
-            fontSize={"clamp(14px, 1.7vw, 22px)"}
+            fontSize={"clamp(1rem, 1.3rem, 1.6rem)"}
             >
               Whats next?
             </Text>
             <Heading
             color={"#C53030"}
-            fontSize={{ base: "2rem", md: "clamp(3rem, 7.4vw, 5rem)" }}
+            fontSize={"clamp(3rem, 5rem, 5rem)"}
             marginTop={"3vh"}
             >
               Get In Touch
             </Heading>
           </Box>
           <Box
-          fontSize={"clamp(12px, 1.7vw, 20px)"}
-          width={"30vw"}
+          fontSize={"clamp(1rem, 1.1rem, 1.6rem)"}
+          width={"50vw"}
           marginTop={"6vh"}
+          maxWidth={"550px"}
           >
             <Text
             lineHeight={"2"}
@@ -90,17 +90,16 @@ const Contact = (props) => {
                     width: "100%"
                   }
                 }}>
-                {` phone. `}
+                {` phone `}
               </Text> (979-417-7881). I'm excited to explore how my skills and experience could contribute to your team and organization.
             </Text>
           </Box>
           <Box
-          marginTop={"10vh"}
+          marginTop={"5vh"}
           >
           <ResumeButton/>
           </Box>
         </Stack>
-        <Footer />
       </Flex>
     </>
   )
