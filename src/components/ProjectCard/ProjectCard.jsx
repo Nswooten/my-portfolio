@@ -94,7 +94,7 @@ const ProjectCard = (props) => {
         >
         <Text
         margin={"20px"}
-        fontSize={"clamp(.8rem, .9rem, 1.2rem)"}
+        fontSize={"clamp(1rem, 1.2rem, 1.2rem)"}
         
         >
           {description}
