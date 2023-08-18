@@ -51,10 +51,10 @@ function App() {
           isVisible={isVisible2}
           y={y}
         />
-        <MyExperience
+        {/* <MyExperience
           intersectionRef={intersectionRef3}
           isVisible={isVisible3}
-        />
+        /> */}
         <Projects
           intersectionRef={intersectionRef4}
           isVisible={isVisible4}

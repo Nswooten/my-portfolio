@@ -72,7 +72,7 @@ const Nav = (props) => {
           <>
             <NavButton label="Home" scroll={scrollIntoView} />
             <NavButton label="About Me" scroll={scrollIntoView} />
-            <NavButton label="My Experience" scroll={scrollIntoView} />
+            {/* <NavButton label="My Experience" scroll={scrollIntoView} /> */}
             <NavButton label="Projects" scroll={scrollIntoView} />
             <NavButton label="Contact" scroll={scrollIntoView} />
             <ResumeButton isLargeScreen={isLargeScreen} />

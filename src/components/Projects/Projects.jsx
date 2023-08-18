@@ -33,7 +33,7 @@ const Projects = (props) => {
           margin={"2vw"}
           color={"#C53030"}
         >
-          Apps
+          Projects
         </Heading>
       </Box>
       <Grid
