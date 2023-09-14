@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      <Spotlight />
+      {/* <Spotlight /> */}
       <Particle />
       <VStack
         spacing={0}

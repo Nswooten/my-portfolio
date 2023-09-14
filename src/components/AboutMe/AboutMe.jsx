@@ -15,6 +15,7 @@ const AboutMe = (props) => {
       marginRight={"10%"}
       display={"flex"}
       py={{ base: "2rem", md: "4rem" }}
+      marginBottom={"20vh"}
     >
       <Stack
         ref={intersectionRef}
@@ -40,6 +41,8 @@ const AboutMe = (props) => {
               marginTop={"2vh"}
               mb="2rem"
               margin={"2vw"}
+              fontWeight={"extrabold"}
+              color={"#C53030"}
             >
               About Me
             </Heading>
@@ -53,6 +56,9 @@ const AboutMe = (props) => {
             display={"flex"}
             flexDirection={"column"}
             fontSize={"clamp(1rem, 1.1rem, 1.6rem)"}
+            marginRight={"3vw"}
+            marginLeft={"3vw"}
+            
           >
             <Text
             >

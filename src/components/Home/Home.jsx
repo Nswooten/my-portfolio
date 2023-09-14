@@ -39,6 +39,7 @@ const Home = (props) => {
             >
               <Text
                 as={"a"}
+                fontWeight={"bold"}
                 color={"#822727"}
                 href="https://www.youtube.com/watch?v=CwIAPKHUdvE" target="_blank"
                 position={"relative"}
@@ -58,20 +59,23 @@ const Home = (props) => {
               whiteSpace={"nowrap"}
               fontSize={"clamp(5rem, 6rem, 7rem)"}
               marginTop={"2vh"}
+              fontWeight={"extrabold"}
             >
               Nick Wooten.
             </Heading>
-            <Divider
+            {/* <Divider
               style={{ borderColor: "#C53030" }}
               width={"65%"}
               transition={"250ms ease-in"}
 
-            />
+            /> */}
             <Heading
               textAlign={"left"}
               fontSize={"clamp(2rem, 3rem, 4rem)"}
               whiteSpace={"nowrap"}
               marginTop={"1vh"}
+              fontWeight={"bold"}
+              color={"#C53030"}
             >
               Full-Stack Developer
             </Heading>
@@ -84,6 +88,7 @@ const Home = (props) => {
               textAlign={"left"}
               marginTop={"3vh"}
               marginBottom={"3vh"}
+              fontWeight={"light"}
             >
               I'm a software engineer based out of Houston, Tx. I love everything about writing code (especially the
               <Text

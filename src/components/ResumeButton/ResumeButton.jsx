@@ -11,6 +11,7 @@ const ResumeButton = (props) => {
     target="_blank"
     >
       <Button
+        size={"sm"}
         fontSize={"clamp(.8rem, 1rem, 1.2rem)"}
         border={"1px solid lightgrey"}
         color={useColorModeValue("black", "white")}

@@ -9,7 +9,7 @@ const config = {
 const styles = {
   global: (props) => ({
     body: {
-      bg: mode("#0e1111", "#f5f5f5")(props),
+      bg: mode("#121317", "#FFFFFC")(props),
     },
   }),
 }
@@ -19,8 +19,8 @@ export const aggieTheme = extendTheme({
     primary: "#4f0b00",
     lightGrey: "#8c8d8d",
     darkGrey: "#474747",
-    white: "#f5f5f5",
-    black: "#0e1111"
+    white: "#FFFFFC",
+    black: "#121317"
   },
   config,
   styles,

@@ -32,6 +32,7 @@ const Projects = (props) => {
           mb="2rem"
           margin={"2vw"}
           color={"#C53030"}
+          fontWeight={"extrabold"}
         >
           Projects
         </Heading>

@@ -12,6 +12,7 @@ const NavButton = (props) => {
         <Text
           as={"a"}
           color={"#822727"}
+          fontWeight={"extrabold"}
           position={"relative"}
           _before={{
             backgroundColor: "#C53030",

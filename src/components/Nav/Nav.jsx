@@ -44,7 +44,7 @@ const Nav = (props) => {
         backgroundColor={
           menuOpen
             ? "transparent"
-            : useColorModeValue("rgba(14,17,17, .97)", "rgba(245,245,245, .95)")
+            : useColorModeValue("rgba(18,19,23,.9)", "rgba(255,255,252, .95)")
         }
         boxShadow={
           menuOpen
@@ -70,6 +70,7 @@ const Nav = (props) => {
         />
         {isLargeScreen ? (
           <>
+          
             <NavButton label="Home" scroll={scrollIntoView} />
             <NavButton label="About Me" scroll={scrollIntoView} />
             {/* <NavButton label="My Experience" scroll={scrollIntoView} /> */}
@@ -108,12 +109,12 @@ const Nav = (props) => {
             top={0}
             visibility={menuOpen ? "visible" : "hidden"}
             backgroundColor={
-              useColorModeValue("rgba(14,17,17,.9)", "rgba(245,245,245,.9)")
+              useColorModeValue("rgba(18,19,23,.9)", "rgba(245,245,245,.9)")
             }
           >
             <NavButton label="Home" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
             <NavButton label="About Me" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
-            <NavButton label="My Experience" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
+            {/* <NavButton label="My Experience" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} /> */}
             <NavButton label="Projects" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
             <NavButton label="Contact" scroll={scrollIntoView} setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
             <ResumeButton />
