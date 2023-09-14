@@ -26,6 +26,7 @@ const ProjectCard = (props) => {
       gridTemplateColumns={"repeat(8, 1fr)"}
       gridTemplateRows={"repeat(8, 1fr)"}
       position={"relative"}
+      marginRight={"2vw"}
     >
       <GridItem
         gridArea={"1 / 1 / 9 / 6"}
@@ -170,6 +171,7 @@ const ProjectCard = (props) => {
               boxSize={['3', '8']}
               marginTop={"5px"}
               marginRight={"5px"}
+              zIndex={10}
             />
 
           </Link>
