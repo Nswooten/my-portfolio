@@ -32,6 +32,10 @@ const ProjectCard = (props) => {
         gridArea={"1 / 1 / 7 / 5"}
         borderRadius={"4px"}
       >
+        <Link
+        href={appLink}
+        target="_blank"
+        >
         <Image
           src={imageSrc}
           alt={title}
@@ -45,8 +49,8 @@ const ProjectCard = (props) => {
           transition="filter 0.3s"
           zIndex={1}
           borderRadius={"4px"}
-        
         />
+        </Link>
       </GridItem>
       <GridItem
         gridArea={"2 / 5 / 3 / 8"}
