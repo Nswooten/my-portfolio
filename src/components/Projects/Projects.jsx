@@ -36,6 +36,7 @@ const Projects = (props) => {
           margin={"2vw"}
           color={"#C53030"}
           fontWeight={"extrabold"}
+          textShadow={" 2px 2px 4px rgba(0, 0, 0, 0.5)"}
         >
           Projects
         </Heading>

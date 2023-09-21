@@ -45,6 +45,7 @@ const SkillIcon = (props) => {
                     as={IconComponent}
                     borderRadius={5}
                     boxSize={['5', '9']}
+                    boxShadow={"2px 2px 4px rgba(0, 0, 0, 0.4)"}
                     color={color}
                     _hover={{
                         transform: "scale(1.1)",

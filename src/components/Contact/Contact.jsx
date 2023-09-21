@@ -31,6 +31,8 @@ const Contact = (props) => {
             color={"#C53030"}
             fontSize={"clamp(3rem, 5rem, 5rem)"}
             marginTop={"3vh"}
+            textShadow={" 2px 2px 4px rgba(0, 0, 0, 0.5)"}
+
             >
               Get In Touch
             </Heading>

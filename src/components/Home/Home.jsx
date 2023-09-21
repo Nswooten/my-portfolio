@@ -43,6 +43,7 @@ const Home = (props) => {
                 color={"#822727"}
                 href="https://www.youtube.com/watch?v=CwIAPKHUdvE" target="_blank"
                 position={"relative"}
+                textShadow={" 2px 2px 4px rgba(0, 0, 0, 0.1)"}
                 _before={{
                   backgroundColor: "#C53030",
                 }}
@@ -60,15 +61,10 @@ const Home = (props) => {
               fontSize={"clamp(5rem, 6rem, 7rem)"}
               marginTop={"2vh"}
               fontWeight={"extrabold"}
+              textShadow={" 2px 2px 4px rgba(0, 0, 0, 0.5)"}
             >
               Nick Wooten.
             </Heading>
-            {/* <Divider
-              style={{ borderColor: "#C53030" }}
-              width={"65%"}
-              transition={"250ms ease-in"}
-
-            /> */}
             <Heading
               textAlign={"left"}
               fontSize={"clamp(2rem, 3rem, 4rem)"}
@@ -76,6 +72,7 @@ const Home = (props) => {
               marginTop={"1vh"}
               fontWeight={"bold"}
               color={"#C53030"}
+              textShadow={" 2px 2px 4px rgba(0, 0, 0, 0.5)"}
             >
               Full-Stack Developer
             </Heading>

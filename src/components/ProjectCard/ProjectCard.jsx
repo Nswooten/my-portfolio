@@ -33,23 +33,24 @@ const ProjectCard = (props) => {
         borderRadius={"4px"}
       >
         <Link
-        href={appLink}
-        target="_blank"
+          href={appLink}
+          target="_blank"
         >
-        <Image
-          src={imageSrc}
-          alt={title}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          style={{
-            filter: isMouseOver ? 'none' : 'grayscale(100%)',
-            transform: isMouseOver ? 'scale(1.05)' : 'scale(1)',
-            transition: 'filter 0.3s, transform 0.3s',
-          }}
-          transition="filter 0.3s"
-          zIndex={1}
-          borderRadius={"4px"}
-        />
+          <Image
+            src={imageSrc}
+            alt={title}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+            style={{
+              filter: isMouseOver ? 'none' : 'grayscale(100%)',
+              transform: isMouseOver ? 'scale(1.05)' : 'scale(1)',
+              transition: 'filter 0.3s, transform 0.3s',
+            }}
+            transition="filter 0.3s"
+            zIndex={1}
+            borderRadius={"4px"}
+            boxShadow={"dark-lg"}
+          />
         </Link>
       </GridItem>
       <GridItem
@@ -61,7 +62,7 @@ const ProjectCard = (props) => {
         zIndex={3}
       >
         <Text
-        fontSize={"clamp(1rem, 1.1rem, 1.6rem)"}
+          fontSize={"clamp(1rem, 1.1rem, 1.6rem)"}
         >
           Featured Project
         </Text>
@@ -69,15 +70,16 @@ const ProjectCard = (props) => {
           fontSize={"clamp(2rem, 2rem, 2rem)"}
           whiteSpace={"nowrap"}
           color={"#C53030"}
+          textShadow={" 2px 2px 4px rgba(0, 0, 0, 0.3)"}
         >
           {index === 3 && (
             <>
-            {title} <span style={italicStyle}>(Shrek Themed)</span>
+              {title} <span style={italicStyle}>(Shrek Themed)</span>
             </>
           )}
           {index !== 3 && (
             <>
-            {title}
+              {title}
             </>
           )}
         </Heading>
@@ -88,25 +90,24 @@ const ProjectCard = (props) => {
         backgroundColor={useColorModeValue("rgba(34, 37, 37, .9)", "rgba(225, 225, 225, .9)")}
         zIndex={2}
         borderRadius={"4px"}
-        
+        boxShadow={"lg"}
+
       >
         <Box
-        display={"flex"}
-        alignContent={"right"}
-       
-        overflowX={"hidden"}
-        textOverflow={"clip"}
+          display={"flex"}
+          alignContent={"right"}
+          overflowX={"hidden"}
+          textOverflow={"clip"}
+          
         >
-        <Text
-        margin={"20px"}
-        fontSize={"clamp(1rem, 1.2rem, 1.2rem)"}
-        
-        >
-          {description}
-        </Text>
-
+          <Text
+            margin={"20px"}
+            fontSize={"clamp(1rem, 1.2rem, 1.2rem)"}
+            textAlign={"left"}
+          >
+            {description}
+          </Text>
         </Box>
-
       </GridItem>
       <GridItem
         gridArea={"5 / 5 / 6 / 8"}
@@ -163,9 +164,10 @@ const ProjectCard = (props) => {
           >
             <Icon
               as={FiGithub}
-              boxSize={['3', '8']}              
+              boxSize={['3', '8']}
               marginTop={"5px"}
               marginRight={"5px"}
+              boxShadow={"2px 2px 4px rgba(0, 0, 0, 0.4)"}
             />
           </Link>
           <Link
@@ -184,8 +186,8 @@ const ProjectCard = (props) => {
               marginTop={"5px"}
               marginRight={"5px"}
               zIndex={10}
+              boxShadow={"2px 2px 2px rgba(0, 0, 0, 0.4)"}
             />
-
           </Link>
         </Box>
       </GridItem>

@@ -1,10 +1,19 @@
-import { Stack, Divider, Link, Icon } from "@chakra-ui/react"
+import { Stack, Divider, Link, Icon, Box, useColorMode } from "@chakra-ui/react"
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi"
 import { useMediaQuery } from "@chakra-ui/react"
 
 
 const Social = () => {
   const [isLargeScreen] = useMediaQuery("(min-width: 1050px)")
+
+
+  const { colorMode } = useColorMode(); // Get the current color mode (light or dark)
+
+  // Define colors based on the color mode
+  const bgColor = colorMode === "dark" ? "#FFFFFC" : "#121317"; // Background color
+  const shadowColor = colorMode === "dark" ? "#EEEEEE" : "#333"; // Shadow color
+  const textColor = colorMode === "dark" ? "#333" : "#FFFFFC"; // Text (icon) color
+
   return (
     <>
       <Stack
@@ -19,11 +28,6 @@ const Social = () => {
         marginTop={isLargeScreen ? "10%" : "25%"}
         zIndex={3}
       >
-        <Divider
-          style={{ borderColor: "#C53030" }}
-          transition="250ms ease-in"
-          orientation="vertical"
-        />
         <Link
           href={"https://www.linkedin.com/in/nick-wooten-a6802599/"}
           target="_blank"
@@ -34,11 +38,22 @@ const Social = () => {
             color: "#C53030",
           }}
         >
+          <Box
+      display="inline-flex"
+      alignItems="center"
+      justifyContent="center"
+      p="10px"
+      borderRadius="10px"
+      background={bgColor} 
+      boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
+      cursor="pointer"
+    >
           <Icon
             as={FiLinkedin}
-            boxSize={['5', '10']} 
-            marginTop={"2px"}
+            boxSize={['5', '10']}
+            // marginTop={"15px"}
           />
+          </Box>
         </Link>
         <Link
           href={"https://github.com/Nswooten"}
@@ -50,11 +65,24 @@ const Social = () => {
             color: "#C53030",
           }}
         >
+          <Box
+          display="inline-flex"
+          alignItems="center"
+          justifyContent="center"
+          p="10px"
+          borderRadius="10px"
+          background={bgColor} 
+          boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
+          cursor="pointer"
+          marginTop={"20px"}
+          >
+
           <Icon
             as={FiGithub}
-            boxSize={['5', '10']} 
-            marginTop={"2px"}
+            boxSize={['5', '10']}
+            // marginTop={"20px"}
           />
+          </Box>
         </Link>
         <Link
           href={"mailto:nswooten@gmail.com"}
@@ -66,17 +94,26 @@ const Social = () => {
             color: "#C53030",
           }}
         >
+          <Box
+          display="inline-flex"
+          alignItems="center"
+          justifyContent="center"
+          p="10px"
+          borderRadius="10px"
+          background={bgColor} 
+          boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
+          cursor="pointer"
+          marginTop={"20px"}
+          >
+
           <Icon
             as={FiMail}
-            boxSize={['5', '10']}            
-            marginTop={"2px"}
+            boxSize={['5', '10']}
+            color={textColor}
+           
           />
+          </Box>
         </Link>
-        <Divider
-          style={{ borderColor: "#C53030" }}
-          transition="250ms ease-in"
-          orientation="vertical"
-        />
       </Stack>
     </>
   )

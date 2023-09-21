@@ -28,12 +28,9 @@ const AboutMe = (props) => {
         >
           <Box
             display={"flex"}
-            alignItems={"center"}>
-            <Divider
-              style={{ borderColor: "#C53030" }}
-              width={"65%"}
-              transition={"250ms ease-in"}
-            />
+            justifyContent={"left"}
+            marginLeft={"2vw"}
+            >
             <Heading
               textAlign={"center"}
               whiteSpace={"nowrap"}
@@ -43,14 +40,11 @@ const AboutMe = (props) => {
               margin={"2vw"}
               fontWeight={"extrabold"}
               color={"#C53030"}
+              textShadow={" 2px 2px 4px rgba(0, 0, 0, 0.5)"}
             >
               About Me
             </Heading>
-            <Divider
-              style={{ borderColor: "#C53030" }}
-              width={"65%"}
-              transition={"250ms ease-in"}
-            />
+
           </Box>
           <Box
             display={"flex"}
@@ -61,19 +55,26 @@ const AboutMe = (props) => {
             
           >
             <Text
+            textAlign={"left"}
             >
               I have a passion for utilizing logic to solve problems in creative, yet practical ways. I honed the skills necessary to effectively pursue this passion while studying philosophy at A&M. Since then, I've worked in the oilfield as a field engineer, and although actualizing in many ways, I needed a carreer with a work-life balance more codusive to happiness. Last year, I made the descision to transition carreers to software engineering.
             </Text>
             <Text
-              marginTop={"2vh"}>
+              marginTop={"2vh"}
+              textAlign={"left"}
+              >
               Today, I am now a proud graduate of General Assembly's Software Engineering Immersive Boot Camp. I am currently working part-time as an engineering technician at Vertice Oil Tools while I continue my search for a position in my new carreer. Currently, my main tools are JavaScript/TypeScript and React.
             </Text>
             <Text
-              marginTop={"2vh"}>
+              marginTop={"2vh"}
+              textAlign={"left"}
+              >
               I love everything outdoors, but my biggest obsession currently is mountain biking. When I'm not coding or outside, I spend my freetime taxing my mental health with League of Legends.
             </Text>
             <Text
-              marginTop={"2vh"}>
+              marginTop={"2vh"}
+              textAlign={"left"}
+              >
               Care to know more? Keep on reading! Below are a few more skills in my toolbox:
             </Text>
 
