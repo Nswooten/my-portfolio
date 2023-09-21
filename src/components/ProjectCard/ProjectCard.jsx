@@ -23,13 +23,13 @@ const ProjectCard = (props) => {
   return (
     <Grid
       display={"grid"}
-      gridTemplateColumns={"repeat(8, 1fr)"}
-      gridTemplateRows={"repeat(8, 1fr)"}
+      gridTemplateColumns={"repeat(7, 1fr)"}
+      gridTemplateRows={"repeat(6, 1fr)"}
       position={"relative"}
       marginRight={"2vw"}
     >
       <GridItem
-        gridArea={"1 / 1 / 9 / 6"}
+        gridArea={"1 / 1 / 7 / 5"}
         borderRadius={"4px"}
       >
         <Image
@@ -49,7 +49,7 @@ const ProjectCard = (props) => {
         />
       </GridItem>
       <GridItem
-        gridArea={"3 / 6 / 4 / 9"}
+        gridArea={"2 / 5 / 3 / 8"}
         display={"flex"}
         flexDirection={"column"}
         alignItems={"flex-end"}
@@ -66,12 +66,12 @@ const ProjectCard = (props) => {
           whiteSpace={"nowrap"}
           color={"#C53030"}
         >
-          {index === 2 && (
+          {index === 3 && (
             <>
             {title} <span style={italicStyle}>(Shrek Themed)</span>
             </>
           )}
-          {index !== 2 && (
+          {index !== 3 && (
             <>
             {title}
             </>
@@ -80,7 +80,7 @@ const ProjectCard = (props) => {
 
       </GridItem>
       <GridItem
-        gridArea={"4 / 5 / 6 / 9"}
+        gridArea={"3 / 3 / 5 / 8"}
         backgroundColor={useColorModeValue("rgba(34, 37, 37, .9)", "rgba(225, 225, 225, .9)")}
         zIndex={2}
         borderRadius={"4px"}
@@ -105,7 +105,7 @@ const ProjectCard = (props) => {
 
       </GridItem>
       <GridItem
-        gridArea={"6 / 6 / 7 / 9"}
+        gridArea={"5 / 5 / 6 / 8"}
       >
         <Box
           display={"flex"}
@@ -122,12 +122,20 @@ const ProjectCard = (props) => {
           {index === 1 && (
             <>
               <SkillIcon icon={"SiJavascript"} color="#F7DF1E" label="JavaScript" />
-              <SkillIcon icon={"SiCss3"} color="#2965f1" label="CSS3" />
+              <SkillIcon icon={"SiReact"} color="#5ed3f2" label="React" />
               <SkillIcon icon={"SiMongodb"} color="#3FA037" label="MongoDB" />
               <SkillIcon icon={"SiMongoose"} color="#861b00" label="Mongoose" />
             </>
           )}
           {index === 2 && (
+            <>
+              <SkillIcon icon={"SiJavascript"} color="#F7DF1E" label="JavaScript" />
+              <SkillIcon icon={"SiCss3"} color="#2965f1" label="CSS3" />
+              <SkillIcon icon={"SiMongodb"} color="#3FA037" label="MongoDB" />
+              <SkillIcon icon={"SiMongoose"} color="#861b00" label="Mongoose" />
+            </>
+          )}
+          {index === 3 && (
             <>
               <SkillIcon icon={"SiJavascript"} color="#F7DF1E" label="JavaScript" />
               <SkillIcon icon={"SiCss3"} color="#2965f1" label="CSS3" />
