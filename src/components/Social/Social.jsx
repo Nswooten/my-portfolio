@@ -5,15 +5,9 @@ import { useMediaQuery } from "@chakra-ui/react"
 
 const Social = () => {
   const [isLargeScreen] = useMediaQuery("(min-width: 1050px)")
-
-
-  const { colorMode } = useColorMode(); // Get the current color mode (light or dark)
-
-  // Define colors based on the color mode
-  const bgColor = colorMode === "dark" ? "#FFFFFC" : "#121317"; // Background color
-  const shadowColor = colorMode === "dark" ? "#EEEEEE" : "#333"; // Shadow color
-  const textColor = colorMode === "dark" ? "#333" : "#FFFFFC"; // Text (icon) color
-
+  const { colorMode } = useColorMode()
+  const bgColor = colorMode === "dark" ? "#FFFFFC" : "#121317"
+  const shadowColor = colorMode === "dark" ? "#EEEEEE" : "#333"
   return (
     <>
       <Stack
@@ -108,9 +102,7 @@ const Social = () => {
 
           <Icon
             as={FiMail}
-            boxSize={['5', '10']}
-            color={textColor}
-           
+            boxSize={['5', '10']}           
           />
           </Box>
         </Link>
