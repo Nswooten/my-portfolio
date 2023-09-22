@@ -1,4 +1,4 @@
-import { Box, GridItem, Grid, Image, Heading, Text, useColorModeValue, Icon, Link } from '@chakra-ui/react'
+import { Box, GridItem, Grid, Image, Heading, Text, useColorModeValue, Icon, Link, useColorMode } from '@chakra-ui/react'
 import { useState } from 'react'
 import SkillIcon from "../SkillIcon/SkillIcon"
 import { FiGithub, FiExternalLink } from "react-icons/fi"
@@ -9,6 +9,10 @@ const ProjectCard = (props) => {
 
   const { title, imageSrc, description, index, gitLink, appLink } = props
   const [isMouseOver, setIsMouseOver] = useState(false)
+
+  const { colorMode } = useColorMode()
+  const bgColor = colorMode === "dark" ? "#FFFFFC" : "#121317"
+  const shadowColor = colorMode === "dark" ? "#EEEEEE" : "#333"
 
   const handleMouseEnter = () => {
     setIsMouseOver(true)
@@ -98,7 +102,7 @@ const ProjectCard = (props) => {
           alignContent={"right"}
           overflowX={"hidden"}
           textOverflow={"clip"}
-          
+
         >
           <Text
             margin={"20px"}
@@ -162,13 +166,21 @@ const ProjectCard = (props) => {
               color: "#C53030",
             }}
           >
-            <Icon
-              as={FiGithub}
-              boxSize={['3', '8']}
-              marginTop={"5px"}
-              marginRight={"5px"}
-              boxShadow={"2px 2px 4px rgba(0, 0, 0, 0.4)"}
-            />
+            <Box
+              display="inline-flex"
+              alignItems="center"
+              justifyContent="center"
+              p="10px"
+              borderRadius="10px"
+              background={bgColor}
+              boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
+              cursor="pointer"
+            >
+              <Icon
+                as={FiGithub}
+                boxSize={['3', '8']}
+              />
+            </Box>
           </Link>
           <Link
             href={appLink}
@@ -180,14 +192,23 @@ const ProjectCard = (props) => {
               color: "#C53030",
             }}
           >
-            <Icon
-              as={FiExternalLink}
-              boxSize={['3', '8']}
-              marginTop={"5px"}
-              marginRight={"5px"}
-              zIndex={10}
-              boxShadow={"2px 2px 2px rgba(0, 0, 0, 0.4)"}
-            />
+            <Box
+              display="inline-flex"
+              alignItems="center"
+              justifyContent="center"
+              p="10px"
+              borderRadius="10px"
+              background={bgColor}
+              boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
+              cursor="pointer"
+            >
+              <Icon
+                as={FiExternalLink}
+                boxSize={['3', '8']}
+                zIndex={10}
+              />
+
+            </Box>
           </Link>
         </Box>
       </GridItem>

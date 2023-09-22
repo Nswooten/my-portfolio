@@ -33,20 +33,19 @@ const Social = () => {
           }}
         >
           <Box
-      display="inline-flex"
-      alignItems="center"
-      justifyContent="center"
-      p="10px"
-      borderRadius="10px"
-      background={bgColor} 
-      boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
-      cursor="pointer"
-    >
-          <Icon
-            as={FiLinkedin}
-            boxSize={['5', '10']}
-            // marginTop={"15px"}
-          />
+            display="inline-flex"
+            alignItems="center"
+            justifyContent="center"
+            p="10px"
+            borderRadius="10px"
+            background={bgColor}
+            boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
+            cursor="pointer"
+          >
+            <Icon
+              as={FiLinkedin}
+              boxSize={['5', '10']}
+            />
           </Box>
         </Link>
         <Link
@@ -60,22 +59,22 @@ const Social = () => {
           }}
         >
           <Box
-          display="inline-flex"
-          alignItems="center"
-          justifyContent="center"
-          p="10px"
-          borderRadius="10px"
-          background={bgColor} 
-          boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
-          cursor="pointer"
-          marginTop={"20px"}
+            display="inline-flex"
+            alignItems="center"
+            justifyContent="center"
+            p="10px"
+            borderRadius="10px"
+            background={bgColor}
+            boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
+            cursor="pointer"
+            marginTop={"20px"}
           >
 
-          <Icon
-            as={FiGithub}
-            boxSize={['5', '10']}
+            <Icon
+              as={FiGithub}
+              boxSize={['5', '10']}
             // marginTop={"20px"}
-          />
+            />
           </Box>
         </Link>
         <Link
@@ -89,21 +88,21 @@ const Social = () => {
           }}
         >
           <Box
-          display="inline-flex"
-          alignItems="center"
-          justifyContent="center"
-          p="10px"
-          borderRadius="10px"
-          background={bgColor} 
-          boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
-          cursor="pointer"
-          marginTop={"20px"}
+            display="inline-flex"
+            alignItems="center"
+            justifyContent="center"
+            p="10px"
+            borderRadius="10px"
+            background={bgColor}
+            boxShadow={`-5px -5px 15px ${shadowColor}, 5px 5px 15px ${shadowColor}, inset 5px 5px 10px ${shadowColor}, inset -5px -5px 10px ${shadowColor}`}
+            cursor="pointer"
+            marginTop={"20px"}
           >
 
-          <Icon
-            as={FiMail}
-            boxSize={['5', '10']}           
-          />
+            <Icon
+              as={FiMail}
+              boxSize={['5', '10']}
+            />
           </Box>
         </Link>
       </Stack>
