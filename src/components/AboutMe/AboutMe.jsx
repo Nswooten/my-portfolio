@@ -57,13 +57,13 @@ const AboutMe = (props) => {
             <Text
             textAlign={"left"}
             >
-              I have a passion for utilizing logic to solve problems in creative, yet practical ways. I honed the skills necessary to effectively pursue this passion while studying philosophy at A&M. Since then, I've worked in the oilfield as a field engineer, and although actualizing in many ways, I needed a carreer with a work-life balance more codusive to happiness. Last year, I made the descision to transition careers to software engineering.
+              I have a passion for utilizing logic to solve problems in creative, yet practical ways. I honed the skills necessary to effectively pursue this passion while studying philosophy at A&M. Since then, I've worked in the oilfield as a field engineer, and although actualizing in many ways, I needed a career with a work-life balance more conducive to happiness. Last year, I made the descision to transition careers to software engineering.
             </Text>
             <Text
               marginTop={"2vh"}
               textAlign={"left"}
               >
-              Today, I am now a proud graduate of General Assembly's Software Engineering Immersive Boot Camp. I am currently working part-time as an engineering technician at Vertice Oil Tools while I continue my search for a position in my new carreer. Currently, my main tools are JavaScript/TypeScript and React.
+              Today, I am now a proud graduate of General Assembly's Software Engineering Immersive Boot Camp. I am currently working part-time as an engineering technician at Vertice Oil Tools while I continue my search for a position in my new career. Currently, my main tools are JavaScript/TypeScript and React.
             </Text>
             <Text
               marginTop={"2vh"}
