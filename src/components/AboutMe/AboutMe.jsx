@@ -57,7 +57,7 @@ const AboutMe = (props) => {
             <Text
             textAlign={"left"}
             >
-              I have a passion for utilizing logic to solve problems in creative, yet practical ways. I honed the skills necessary to effectively pursue this passion while studying philosophy at A&M. Since then, I've worked in the oilfield as a field engineer, and although actualizing in many ways, I needed a carreer with a work-life balance more codusive to happiness. Last year, I made the descision to transition carreers to software engineering.
+              I have a passion for utilizing logic to solve problems in creative, yet practical ways. I honed the skills necessary to effectively pursue this passion while studying philosophy at A&M. Since then, I've worked in the oilfield as a field engineer, and although actualizing in many ways, I needed a carreer with a work-life balance more codusive to happiness. Last year, I made the descision to transition careers to software engineering.
             </Text>
             <Text
               marginTop={"2vh"}
